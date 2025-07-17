@@ -1,4 +1,4 @@
-import 'package:dawurogna_figurative_speaking/constants/constants.dart';
+import 'package:dawurogna_figurative_speaking/Core/Constants/constants.dart';
 import 'package:flutter/material.dart';
 
 class ColorIndicator extends StatelessWidget {

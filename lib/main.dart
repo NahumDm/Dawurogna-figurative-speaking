@@ -1,4 +1,4 @@
-import 'package:dawurogna_figurative_speaking/screens/onboarding.dart';
+import 'package:dawurogna_figurative_speaking/Screens/onboarding.dart';
 import 'package:flutter/material.dart';
 
 void main() {

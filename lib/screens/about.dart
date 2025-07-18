@@ -1,7 +1,10 @@
 import 'package:dawurogna_figurative_speaking/Core/Constants/constants.dart';
+import 'package:dawurogna_figurative_speaking/Widgets/tales_detail_container.dart';
 import 'package:flutter/material.dart';
 
 class About extends StatelessWidget {
+  // final StatefulNavigationShell navigationShell;
+
   const About({super.key});
 
   @override
@@ -9,9 +12,10 @@ class About extends StatelessWidget {
     return Scaffold(
       backgroundColor: Constants.background,
       appBar: AppBar(
+        backgroundColor: Constants.background,
         centerTitle: true,
-        title: Text(
-          'About',
+        title: const Text(
+          'ስለ አፑ',
           style: TextStyle(
             fontFamily: 'Dash',
             fontSize: Constants.mdFont,
@@ -19,7 +23,7 @@ class About extends StatelessWidget {
           ),
         ),
       ),
-      body: Center(child: Text('Hiiiii')),
+      body: Center(child: DetailContainer()),
     );
   }
 }

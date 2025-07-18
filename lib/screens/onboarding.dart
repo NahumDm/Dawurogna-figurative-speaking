@@ -1,4 +1,5 @@
 import 'package:dawurogna_figurative_speaking/Core/Constants/constants.dart';
+import 'package:dawurogna_figurative_speaking/Core/Route/route_names.dart';
 import 'package:dawurogna_figurative_speaking/widgets/color_indicator.dart';
 import 'package:dawurogna_figurative_speaking/widgets/continue_button.dart';
 import 'package:flutter/material.dart';
@@ -60,7 +61,7 @@ class Onboarding extends StatelessWidget {
             // Continue Button
             ContinueButton(
               size: size,
-              onpressed: () => context.go('/category'),
+              onpressed: () => context.goNamed(RouteNames.category),
             ),
           ],
         ),

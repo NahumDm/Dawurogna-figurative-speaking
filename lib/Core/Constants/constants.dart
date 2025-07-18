@@ -14,6 +14,10 @@ class Constants {
   static const double bookHeight = 80.0;
   static const double bookWidth = 80.0;
 
+  //Dawuro Cultural Imgage Size
+  static const double imageHeight = 80.0;
+  static const double imageWidth = 60.0;
+
   //Font Size
   static const double lgFont = 25.0;
   static const double mdFont = 18.0;

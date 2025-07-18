@@ -13,6 +13,18 @@ class _SettingsState extends State<Settings> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Constants.background,
+      appBar: AppBar(
+        backgroundColor: Constants.background,
+        centerTitle: true,
+        title: Text(
+          'ማስተካከያ',
+          style: TextStyle(
+            fontFamily: 'Dash',
+            fontSize: Constants.mdFont,
+            fontWeight: FontWeight.w700,
+          ),
+        ),
+      ),
       body: Center(child: Text('Byyyyyy')),
     );
   }

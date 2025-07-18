@@ -2,6 +2,7 @@ import 'package:dawurogna_figurative_speaking/Core/Constants/constants.dart';
 import 'package:dawurogna_figurative_speaking/widgets/color_indicator.dart';
 import 'package:dawurogna_figurative_speaking/widgets/continue_button.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class Onboarding extends StatelessWidget {
   const Onboarding({super.key});
@@ -57,7 +58,10 @@ class Onboarding extends StatelessWidget {
             ColorIndicator(),
             SizedBox(height: 15.0),
             // Continue Button
-            ContinueButton(size: size),
+            ContinueButton(
+              size: size,
+              onpressed: () => context.go('/category'),
+            ),
           ],
         ),
       ),

@@ -1,4 +1,4 @@
-import 'package:dawurogna_figurative_speaking/Screens/onboarding.dart';
+import 'package:dawurogna_figurative_speaking/Core/Route/route_config.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,6 +10,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(title: 'ዳውሮኛ ምሳሌያዊ አነጋገር', home: Onboarding());
+    return MaterialApp.router(
+      debugShowCheckedModeBanner: false,
+      routerConfig: routeProvider,
+      title: 'ዳውሮኛ ምሳሌያዊ አነጋገር',
+    );
   }
 }

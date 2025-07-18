@@ -1,5 +1,3 @@
-import 'package:flutter/material.dart';
-
 class Tales {
   final String alphabet;
   final String content;

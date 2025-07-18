@@ -2,9 +2,14 @@ import 'package:dawurogna_figurative_speaking/Core/Constants/constants.dart';
 import 'package:flutter/material.dart';
 
 class ContinueButton extends StatelessWidget {
-  const ContinueButton({super.key, required this.size});
+  const ContinueButton({
+    super.key,
+    required this.onpressed,
+    required this.size,
+  });
 
   final Size size;
+  final VoidCallback onpressed;
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +23,7 @@ class ContinueButton extends StatelessWidget {
             borderRadius: BorderRadius.circular(10.0),
           ),
         ),
-        onPressed: () {},
+        onPressed: onpressed,
         child: Text(
           'Continue',
           style: TextStyle(

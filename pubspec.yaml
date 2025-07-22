@@ -30,6 +30,7 @@ flutter:
   assets:
     - assets/images/book_icon.png
     - assets/images/dawuro_gihibli.png
+    - assets/data/dawurogna_proverbs.json
 
   fonts:
     - family: Dash

@@ -1,5 +1,5 @@
 import 'package:dawurogna_figurative_speaking/Core/Constants/constants.dart';
-import 'package:dawurogna_figurative_speaking/Widgets/tales_detail_container.dart';
+import 'package:dawurogna_figurative_speaking/Widgets/proverbs_detail_container.dart';
 import 'package:flutter/material.dart';
 
 class About extends StatelessWidget {

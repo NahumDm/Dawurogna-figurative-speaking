@@ -4,6 +4,7 @@ import 'package:dawurogna_figurative_speaking/Screens/category.dart';
 import 'package:dawurogna_figurative_speaking/Screens/onboarding.dart';
 import 'package:dawurogna_figurative_speaking/Screens/settings.dart';
 import 'package:dawurogna_figurative_speaking/Widgets/appshell.dart';
+import 'package:dawurogna_figurative_speaking/Widgets/proverbs_alphabet_list.dart';
 import 'package:go_router/go_router.dart';
 
 final routeProvider = GoRouter(
@@ -13,6 +14,11 @@ final routeProvider = GoRouter(
       name: RouteNames.onboarding,
       path: '/onboarding',
       builder: (context, state) => const Onboarding(),
+    ),
+    GoRoute(
+      name: RouteNames.eachAlphabetList,
+      path: '/eachAlphabetList:alphabet',
+      builder: (context, state) => AlphabetListTile(onTap: () {}),
     ),
 
     /* Main App Shell That Contains the Bottom Navigation Bar

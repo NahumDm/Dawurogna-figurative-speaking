@@ -2,21 +2,21 @@
   {
     "id": 1,
     "Alphabet": "A",
-    "dawurogna": "Aago na'a zaallay hallitsaa Gobbo na'a ochchay makkalaa.",
-    "dawurogna_phonetic": "አጎ ናአ ዘላይ ሀሊፃ ጎቦ ናአ ኦቻይ ማካላ።",
+    "dawurogna": "Aago na'a zaallay hallitsaa Gobbo na'a ochchay wonjjalaa.",
+    "dawurogna_phonetic": "አጎ ናአ ዘላይ ሀሊፃ ጎቦ ናአ ኦቻይ ዎንጃላ፡፡",
     "amharic_translation": "ሸማኔ በመኑ ጠይብ በከሰሉ።"
   },
   {
     "id": 2,
     "Alphabet": "A",
-    "dawurogna": "Aannisi aco mek’etsii meto.",
+    "dawurogna": "Aannisi ac’o mek’etsii meto.",
     "dawurogna_phonetic": "አንሲ አጮ መቀፂ መቶ።",
-    "amharic_translation": "ይሉኝታ የራስ አሊን ቤት የፈታ"
+    "amharic_translation": "ይሉኝታ የራስ ዓሊን ቤት የፈታ"
   },
   {
     "id": 3,
     "Alphabet": "A",
-    "dawurogna": "Aara kawuu bangga mii giina caddiya udulay o son de’ii gee.",
+    "dawurogna": "Aara kawuu bangga mii giina c’addiya udulay o son de’ii gee.",
     "dawurogna_phonetic": "አራ ካው ባንጋ ሚግና ጫዲያ ኡዱላይ ኦ ሶን ደኢ ገ።",
     "amharic_translation": "ለቀባሪ አረዱት።"
   },
@@ -37,14 +37,14 @@
   {
     "id": 6,
     "Alphabet": "A",
-    "dawurogna": "Aatti shek’aynne boyyiyaa camu wod’enna.",
+    "dawurogna": "Aatti shek’aynne boyyiyaa c’amu wod’enna.",
     "dawurogna_phonetic": "አቲ ሸቃይኔ ቦይያ ጫሙ ወደና።",
     "amharic_translation": "የእናት እርግማንና የኦጭኖ(ቦዬ) ምሬት አይገድልም።"
   },
   {
     "id": 7,
     "Alphabet": "A",
-    "dawurogna": "Aattiin qanxxina naattinkka dolay gee xorii.",
+    "dawurogna": "Aattiin qans’ina naattinkka dolay gee s’orii.",
     "dawurogna_phonetic": "አቲን ቃንፂና ናትንካ ዶላይ ገ ፆሪ።",
     "amharic_translation": "የዘሬ ቢቀር ያንዘረዝረኝ።"
   },
@@ -52,7 +52,7 @@
     "id": 8,
     "Alphabet": "A",
     "dawurogna": "Aattuu bantta sagaayyi naatto kushiyaa mentsee.",
-    "dawurogna_phonetic": "አቱ ባንታ ሳጋይ ናቶ ኩሽያ መንፀ።",
+    "dawurogna_phonetic": "አቱ ባንታ ሣጋይ ናቶ ኩሽያ መንፀ።",
     "amharic_translation": "ለእናቷ የሌላት አልቦ የልጅቷን እግር ይሰብራል።"
   },
   {
@@ -65,7 +65,7 @@
   {
     "id": 10,
     "Alphabet": "A",
-    "dawurogna": "Aattuma asan aro orddo, macca asan malaa lo'oo.",
+    "dawurogna": "Aattuma asan aro orddo, mac'c'a asan malaa lo'oo.",
     "dawurogna_phonetic": "አቱማ አሳን አሮ ኦርዶ ማጫ አሳን ማላ ሎኦ።",
     "amharic_translation": "ወንድ በጥንካሬው ሴት በውበቷ።`"
   },
@@ -79,8 +79,8 @@
   {
     "id": 12,
     "Alphabet": "A",
-    "dawurogna": "Aawuu yeedertsina wos’s’a na'ayinne bayizza; ek’k’i shocettawenne bayizza.",
-    "dawurogna_phonetic": "አው የደርፂና ወጻ ናአይነ ባይዛ ኤቂ ሸጮታዎኔ ባይዘ።",
+    "dawurogna": "Aawuu yeedertsina wos’s’a na'ayinne bayizza; ek’k’i shoc'ettawenne bayizza.",
+    "dawurogna_phonetic": "አው የደርፂና ወጻ ናአይነ ባይዛ ኤቂ ሸጮታዎኔ ባይዛ።",
     "amharic_translation": "አባት ቢያባርር የሮጠውም ሆነ ቁሞ የተመታ ልጅ ጥፋተኛ ነው።"
   },
   {
@@ -94,7 +94,7 @@
     "id": 14,
     "Alphabet": "A",
     "dawurogna": "Aawuu oytsaa erina na'ay elle elle me'’ee.",
-    "dawurogna_phonetic": "አዉ አይፃ ኤሪና ናአይ ኤለ ኤለ መኤ፡፡",
+    "dawurogna_phonetic": "አዉ ኦይፃ ኤሪና ናአይ ኤለ ኤለ መኤ፡፡",
     "amharic_translation": "ጌታዋን የምታምን ዉሻ ፍሪዳ ሲታረድ እወንዝ ወረደች፡፡"
   },
   {
@@ -107,36 +107,421 @@
   {
     "id": 16,
     "Alphabet": "A",
-    "dawurogna": "Aawuwa bashi na’a wodhiya hargge haxaata, achcha bashi kaatsa mentsiya zaalla hallitha.",
+    "dawurogna": "Aawuwa bashi na’a wod'iya hargge haxaata, achcha bashi kaatsa mentsiya zaalla hallitha.",
     "dawurogna_phonetic": "አውዋ ባሽ ናአ ወዲያ ሀርጌ ሀፃታ አቻ ባሽ ካፃ መንፂያ ዛላ ሀሊፃ። ",
     "amharic_translation": "ይታደሏል እንጂ አይታገሉም።"
   },
   {
     "id": 17,
     "Alphabet": "A",
-    "dawurogna": "Aawuwa daruu yelanawappe k’aadda daruu yelo",
+    "dawurogna": "Aawuwa daruu yelanawappe k’aadda daruu yelo.",
     "dawurogna_phonetic": "አዉዋ ዳሩ የላናዋፐ ቃዳ ዳሩ የሎ፡፡",
     "amharic_translation": "ከትልቅ አባት ከመወለድ ትልቅ ዕድል ይዞ መወለድ ይሻላል፡፡"
   },
   {
     "id": 18,
     "Alphabet": "A",
-    "dawurogna": "Aawuwa paray kessenna na'a parary wotsenna.",
+    "dawurogna": "Aawuwa paray kessenna na'a paray wotsenna.",
     "dawurogna_phonetic": "አዉዋ ፓራይ ከሰና፤ ናኣ ፓራይ ወፀና፡፡",
     "amharic_translation": "አይዋጥ አይተፋ መላዉ የጠፋ፡፡"
   },
   {
     "id": 19,
     "Alphabet": "A",
-    "dawurogna": "Aawuwa shek’ayinne tuussa haaruu itta",
+    "dawurogna": "Aawuwa shek’ayinne tuussa haaruu itta.",
     "dawurogna_phonetic": "አዉዋ ሸቃይነ ቱሳ ሀሩ እታ፡፡",
     "amharic_translation": "ንጉሥ ከተነፈሰ ዓይን ከፈሰሰ፡፡"
   },
   {
     "id": 20,
     "Alphabet": "A",
-    "dawurogna": "Aawuwanna de'iya na’ay dadawu guulluwaa olee",
+    "dawurogna": "Aawuwanna de'iya na’ay dadawu guulluwaa olee.",
     "dawurogna_phonetic": "አዉዋና ደኢያ ናኣይ ዳዳዉ ጉሉዋ ኦሌ፡፡",
     "amharic_translation": "ጌታዋን የምታምን ዉሻ ፍርዳ ሲታረድ እወንዝ ወረደች፡፡"
+  },
+  {
+    "id": 21,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 22,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 23,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 24,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 25,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 26,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 27,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 28,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 29,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 30,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 31,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 31,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 33,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 34,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 35,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 36,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 37,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 38,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 39,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 40,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 41,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 42,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 43,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 44,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 45,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id":46 ,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 47,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 48,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 49,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 50,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 51,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 52,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 53,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 54,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 55,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 56,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 57,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 58,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 59,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 60,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 61,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 62,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 63,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 64,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 65,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 66,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 67,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 68,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+  {
+    "id": 69,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 70,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 71,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 72,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 73,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 74,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+   {
+    "id": 75,
+    "Alphabet": "",
+    "dawurogna": "",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
   }
 ]

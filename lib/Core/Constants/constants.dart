@@ -20,6 +20,7 @@ class Constants {
 
   //Font Size
   static const double lgFont = 25.0;
+  static const double xlgFont = 26.0;
   static const double mdFont = 18.0;
   static const double smFont = 14.0;
 

@@ -141,60 +141,1027 @@
   },
   {
     "id": 21,
-    "Alphabet": "",
-    "dawurogna": "",
-    "dawurogna_phonetic": "",
-    "amharic_translation": ""
+    "Alphabet": "A",
+    "dawurogna": "Aawuwappe ayaan lo''o ashuwappe mek’etsi mal’’o",
+    "dawurogna_phonetic": "አውዋፐ አያናይ ሎኦ አሹዋፐ መቀፃይ ማልኦ።",
+    "amharic_translation": "እናት ለልጇ ነብይ ነች።"
   },
-   {
+  {
     "id": 22,
-    "Alphabet": "",
-    "dawurogna": "",
-    "dawurogna_phonetic": "",
-    "amharic_translation": ""
+    "Alphabet": "A",
+    "dawurogna": "Abban utti s’aasaa laac'c'ee.",
+    "dawurogna_phonetic": "አባን ኡቲ ጻሳ ላጨ።",
+    "amharic_translation": "የአባይን ልጅ ውሃ ጠማው።"
   },
-   {
+  {
     "id": 23,
-    "Alphabet": "",
-    "dawurogna": "",
+    "Alphabet": "A",
+    "dawurogna": "Abbo dabbo bantta gadiyan Gena-Gazo; ishi michche bantta metuwan geyaa saamoo.",
     "dawurogna_phonetic": "",
     "amharic_translation": ""
   },
    {
     "id": 24,
-    "Alphabet": "",
-    "dawurogna": "",
-    "dawurogna_phonetic": "",
-    "amharic_translation": ""
+    "Alphabet": "A",
+    "dawurogna": "Ac'aan durettawenne pajaan matsottawee baawa.",
+    "dawurogna_phonetic": "አጫን ዱረታዌኔ ፓጃን ማፆታዌ ባዋ።",
+    "amharic_translation": "በካሣ የከበረ በአጓት የሰከረ። "
   },
    {
     "id": 25,
-    "Alphabet": "",
-    "dawurogna": "",
-    "dawurogna_phonetic": "",
-    "amharic_translation": ""
+    "Alphabet": "A",
+    "dawurogna": "Ac'o bantta mank’uunne hargge bantta gilk’ay coo pas’ee.",
+    "dawurogna_phonetic": "አጮ ባንታ ማንቁነ ሀርጌ ባንታ ግልቃይ ጮ ፓጼ። ",
+    "amharic_translation": "ቀን ያልፋል እስኪአልፍ ያለፋል።"
   },
    {
     "id": 26,
-    "Alphabet": "",
-    "dawurogna": "",
-    "dawurogna_phonetic": "",
-    "amharic_translation": ""
+    "Alphabet": "A",
+    "dawurogna": "Ac'uwa dosiyanna leekiya ookawu.",
+    "dawurogna_phonetic": "አጩዋ ዶስያና ሌኪያ ኦካው። ",
+    "amharic_translation": "ሌባ ለአመሉ ዳቦ ይልሳል።"
   },
    {
     "id": 27,
-    "Alphabet": "",
-    "dawurogna": "",
-    "dawurogna_phonetic": "",
-    "amharic_translation": ""
+    "Alphabet": "A",
+    "dawurogna": "Achcha ac'uu c'iggina wurenna.",
+    "dawurogna_phonetic": "አቻ አጩ ጭግና ውረና።",
+    "amharic_translation": "የአፍ ወለምታ በቅቤ አይታሽም።"
   },
    {
     "id": 28,
-    "Alphabet": "",
-    "dawurogna": "",
+    "Alphabet": "A",
+    "dawurogna": "Achchaa ac'uu ciginna wurenna miishshaa ac'uu c'iggin wuree.",
+    "dawurogna_phonetic": "አቻ አጩ ጭግና ውረና ምሻ አጩ ጭግና ውሬ።",
+    "amharic_translation": "የአፍ ወለምታ በቅቤ አይታሽም።"
+  },
+  {
+    "id": 29,
+    "Alphabet": "A",
+    "dawurogna": "Achchay mal’'uwa miina shakalay bak’aa akkee.",
+    "dawurogna_phonetic": "አቻይ ማላኡዋ ሚና ሻካላይ ባቃ አኬ።",
+    "amharic_translation": "አይጥ በበላ ዳዋ ተመታ።"
+  },
+  {
+    "id": 30,
+    "Alphabet": "A",
+    "dawurogna": "Achchi bantta kuttuu gilla bangga mee/dhogge/ gede bantta shooshshay gassaa lic’uwaa gi''ee.",
+    "dawurogna_phonetic": "አቺ ባንታ ኩቱ ጊላ ባንጋ ሜ(ዶጌ) ገዴ ባንታ ሾሻይ ጋሳ ሊጯ ጊኤ።",
+    "amharic_translation": "ጉድ ይገርማል አህያ ከጅብ ይከርማል።"
+  },
+  {
+    "id": 31,
+    "Alphabet": "A",
+    "dawurogna": "Achchi banttana achchaayo sa\"a bessawu.",
+    "dawurogna_phonetic": "አቺ ባንታና አቻዮ ሳኣ በሳው።",
+    "amharic_translation": "ልጅ እናቷን ምጥ አስተማረች።"
+  },
+  {
+    "id": 32,
+    "Alphabet": "A",
+    "dawurogna": "Addaa odina adan k’antsanee?",
+    "dawurogna_phonetic": null,
+    "amharic_translation": null
+  },
+  {
+    "id": 33,
+    "Alphabet": "A",
+    "dawurogna": "Addaara handdaari gishshaw zaallima ushawu.",
+    "dawurogna_phonetic": "አዳራ ሀንዳሪ ግሻው ዘሊማ ኡሻው።",
+    "amharic_translation": "ይሉኝታ የራስ ዓሊን ቤት የፈታ።"
+  },
+  {
+    "id": 34,
+    "Alphabet": "A",
+    "dawurogna": "Addiya wuliwushshay arssaan gisii wochchee.",
+    "dawurogna_phonetic": "አዲያ ውሊውሻይ አሪሳን ጊሲ ወቼ።",
+    "amharic_translation": "የለመደች ጦጣ ሁልጊዜ ሸምጣጣ።"
+  },
+  {
+    "id": 35,
+    "Alphabet": "A",
+    "dawurogna": "Addiyanna ak’anawaappe yalagaa s’eella bashana gawu wodoratta.",
+    "dawurogna_phonetic": "አዲያና አቃናዋፔ ያላጋ ጸላ ባሻና ጋው ወዶራታ።",
+    "amharic_translation": "ቢያስቀዝንም ጮማ ይሻላል።"
+  },
+  {
+    "id": 36,
+    "Alphabet": "A",
+    "dawurogna": "Afilay aawa ude nafissay na'a udee.",
+    "dawurogna_phonetic": "አፊላይ አዋ ኡዴ ናፍሳይ ናኣ ኡዴ።",
+    "amharic_translation": "እህል ለቀጠና ወርቅ ለዝና።"
+  },
+  {
+    "id": 37,
+    "Alphabet": "A",
+    "dawurogna": "Agaanna de' ishshin gantsaanna galataa akkawu.",
+    "dawurogna_phonetic": "አጋና ደኢሽና ጋንፃና ጋላታ አካው።",
+    "amharic_translation": "ያረሰው በሬ እያለ የጫነው አህያ ይመሰገናል።"
+  },
+  {
+    "id": 38,
+    "Alphabet": "A",
+    "dawurogna": "Aggina de’iyanna olina de'iyaawa gelawu",
+    "dawurogna_phonetic": "አግና ደኢያና ኦሊና ደኢያዋ ገላው።",
+    "amharic_translation": "ለአፈ ግም አፍንጫ ድፍን ያዝለታል።"
+  },
+  {
+    "id": 39,
+    "Alphabet": "A",
+    "dawurogna": "Aggo erennawee aafotee.",
+    "dawurogna_phonetic": "አጎ ኤረናዌ አፎቴ።",
+    "amharic_translation": "የሰውን ምክር የማይሰማ ችግር ላይ መውደቁ የማይቀር ነው።"
+  },
+  {
+    "id": 40,
+    "Alphabet": "A",
+    "dawurogna": "Aggo erenna bitaniyawu aafuu zawa",
+    "dawurogna_phonetic": "አጎ ኤረና ቢታንያው አፉ ዛዋ።",
+    "amharic_translation": "የሰውን ምክር የማይሰማ ችግር ላይ መውደቁ የማይቀር ነው።"
+  },
+  {
+    "id": 41,
+    "Alphabet": "A",
+    "dawurogna": "Agina wonttaanne hariya handda ta eray gee babark’ii.",
+    "dawurogna_phonetic": "አግና ወንታነ ሀሪያ ሀንዳ ታ ኤራይ ገ ባባርቂ።",
+    "amharic_translation": "የውጥን ጣዕም ቀላዋጭ ያውቃል።"
+  },
+  {
+    "id": 42,
+    "Alphabet": "A",
+    "dawurogna": "Aginaan babark’i yedertheedda kanay galassi karoo kesenna",
+    "dawurogna_phonetic": "አግናን ባባሪቂ የደርፀዳ ካናይ ጋላስ ካሮ ከሰና።",
+    "amharic_translation": "እባብን ያየ በልጥ በረዬ።"
+  },
+  {
+    "id": 43,
+    "Alphabet": "A",
+    "dawurogna": "Aguntsa agunthan pik’ee",
+    "dawurogna_phonetic": "አጉንፃ አጉንፃን ፒቀ።",
+    "amharic_translation": "እሾህን በእሾህ።"
+  },
+  {
+    "id": 44,
+    "Alphabet": "A",
+    "dawurogna": "Aguntsay dirawa caddee",
+    "dawurogna_phonetic": "አጉንፃይ ዲራዋ ጫደ።",
+    "amharic_translation": "ሥራ ለሠሪው እሾህ ለአጣሪው።"
+  },
+  {
+    "id": 45,
+    "Alphabet": "A",
+    "dawurogna": "Akkatti naatta kare kare giina, kuttatti naatta soo soo gaw.",
+    "dawurogna_phonetic": "አካቲ ናታ ካረ ካረ ግና ኩታቲ ናታ ሶ ሶ ጋው።",
+    "amharic_translation": "ዘር ከልጓም በላይ ይስባል።"
+  },
+  {
+    "id": 46,
+    "Alphabet": "A",
+    "dawurogna": "Akumuwo yayyiide gem’’shennaan ak’ee",
+    "dawurogna_phonetic": "አኩሞው ያይዴ ገምእሸናን አቀ።",
+    "amharic_translation": "ህልም ተፈርቶ ሳይተኛ አይታደርም።"
+  },
+  {
+    "id": 47,
+    "Alphabet": "A",
+    "dawurogna": "Al'’o afutsa udduns’s’ii laac’c’ee",
+    "dawurogna_phonetic": "አልኦ አፉፃ ኡዱንጺ ላጨ።",
+    "amharic_translation": "አነሰ ቢሉ ተቀነሰ።"
+  },
+  {
+    "id": 48,
+    "Alphabet": "A",
+    "dawurogna": "Al'’o asina s’inggillii afee",
+    "dawurogna_phonetic": "አልኦ አስና ጺንግሊ አፌ።",
+    "amharic_translation": "በችግር የተገኘ ነገር ሲበላሽ።"
+  },
+  {
+    "id": 49,
+    "Alphabet": "A",
+    "dawurogna": "Alay wurana denddina caday  /Cigay/ salkki/ achcha s’ap’uwaan mal'’ee.",
+    "dawurogna_phonetic": "አላይ ውራና ደንዲና ጫዳይ አቻ ጻጷን ማልኤ።",
+    "amharic_translation": "ሲያልቅ አያምር።"
+  },
+  {
+    "id": 50,
+    "Alphabet": "A",
+    "dawurogna": "Alay orddina, alaa giddon bookki miya kuttuu alleek’ee",
+    "dawurogna_phonetic": "አላይ ኦርዲና አላ ጊዶን ቦኪ ምያ ኩቱ አለቄ።",
+    "amharic_translation": "ካለው ተወለድ ወይም ካለው ተጠጋ።"
+  },
+  {
+    "id": 51,
+    "Alphabet": "A",
+    "dawurogna": "Alay shoobbena aannisay shoobbee",
+    "dawurogna_phonetic": "አላይ ሾበና አኒሳይ ሾቤ።",
+    "amharic_translation": "ከብዙ ፀሎት የልብ ቅንነት።"
+  },
+  {
+    "id": 52,
+    "Alphabet": "A",
+    "dawurogna": "Allagaakko simmi coommiide dabbuwakko simmi mittee",
+    "dawurogna_phonetic": "አላጋኮ ስሚ ጮሚዴ ዳቡዋኮ ስሚ ምቴ።",
+    "amharic_translation": "መከራን ከዘመድ እንጀራን ከባዕድ።"
+  },
+  {
+    "id": 53,
+    "Alphabet": "A",
+    "dawurogna": "Allaga ayifiyaan mereessay bunchchiya",
+    "dawurogna_phonetic": "አላጋ አይፊያን መረሳይ ቡንቺያ።",
+    "amharic_translation": "ላላዩ ልጅ ዳቦ ፊሪዳው።"
+  },
+  {
+    "id": 54,
+    "Alphabet": "A",
+    "dawurogna": "Allaga zilaassay ittuwappe aad’d’enna",
+    "dawurogna_phonetic": "አላጋ ዚላሳይ እቱዋፔ አደና።",
+    "amharic_translation": "ባዕድ ሥር የለውም።"
+  },
+  {
+    "id": 55,
+    "Alphabet": "A",
+    "dawurogna": "Ammanetenna laggii pinuwan pinuwan caak’ee",
+    "dawurogna_phonetic": "አማነተና ላጊ ፒኑዋን ፒኑዋን ጫቄ።",
+    "amharic_translation": "ከማይታመኑ ባልንጀራ ጋር በየወንዙ ይማማላሉ።"
+  },
+  {
+    "id": 56,
+    "Alphabet": "A",
+    "dawurogna": "Amaara k’aalaa erussay giira peeshshenna",
+    "dawurogna_phonetic": "አማራ ቃላ ኤሩሳይ ጊራ ፔሼና።",
+    "amharic_translation": "አማርኛ መቻል ከግብር አያድንም።"
+  },
+  {
+    "id": 57,
+    "Alphabet": "A",
+    "dawurogna": "Amaneedda mashshay tiriyaan me'’ee",
+    "dawurogna_phonetic": "አማነዳ ማሻይ ቲሪያን መኤ።",
+    "amharic_translation": "ያመኑት ፈረስ በደንደስ።"
+  },
+  {
+    "id": 58,
+    "Alphabet": "A",
+    "dawurogna": "Amuu hyuwaa kare gatsee",
+    "dawurogna_phonetic": "አሙ ሀዩዋ ካሬ ጋፀ።",
+    "amharic_translation": "ምኞት ከሞት ያደርሳል።"
+  },
+  {
+    "id": 59,
+    "Alphabet": "A",
+    "dawurogna": "Anddo banawu genddo gassawu.",
+    "dawurogna_phonetic": "አንዶ ባናው ገንዶ ጋሳው።",
+    "amharic_translation": "ፍየል ወዲህ ቅዝምዝም ወዲያ።"
+  },
+  {
+    "id": 60,
+    "Alphabet": "A",
+    "dawurogna": "Anggotti asaraa akonanne gen”ii gul”aa duutsonna itta",
+    "dawurogna_phonetic": "አንጎቲ አሳራ አኮናነ ገንኢ ጉልአ ዱፆና እታ።",
+    "amharic_translation": "ሞኝ ካመረረ በግ ከበረረ መመለሻ የለውም።"
+  },
+  {
+    "id": 61,
+    "Alphabet": "A",
+    "dawurogna": "Anhaa soo ollatsay amottishshina kare ollatsaw afee guwa",
+    "dawurogna_phonetic": "አንሀ ሶ ኦላፃይ ኦሞቲሽና ካረ ኦላፃው አፌ ጉዋ።",
+    "amharic_translation": "ሬሳን የቤት ምስጥ ሲመኘው ለደጁ ይወስደዋል።"
+  },
+  {
+    "id": 62,
+    "Alphabet": "A",
+    "dawurogna": "Anhaa zigiriyaa bitanii barewu kobaa akko.",
+    "dawurogna_phonetic": "አንሀ ዚግሪያ ቢታኒ ባረው ኮባ አኮ።",
+    "amharic_translation": "አስከሬንን የሚያማ ግፍ ለራሱ ይወስዳል።"
+  },
+  {
+    "id": 63,
+    "Alphabet": "A",
+    "dawurogna": "Anhaw tokka be'aadda era dees’a.",
+    "dawurogna_phonetic": "አንሀው ቶካ በአዳ ኤራ ደፃ።",
+    "amharic_translation": "ሲያውቅ ያሟግት ዳኛ።"
+  },
+  {
+    "id": 64,
+    "Alphabet": "A",
+    "dawurogna": "Anjju Anjjo gidooppe k’as’araan anjjowaa.",
+    "dawurogna_phonetic": "አንጁ አንጆ ግዶፐ ቃጸራን አንጆዋ።",
+    "amharic_translation": "ምርቃት ምርቃት ከሆነ ሲገረዙ መመረቅ።"
+  },
+  {
+    "id": 65,
+    "Alphabet": "A",
+    "dawurogna": "Ak’ennasaan k’amissoppa",
+    "dawurogna_phonetic": "አቀና ሳአን ቃሚሶፓ።",
+    "amharic_translation": "በማያድሩበት ቤት አያምሹበት።"
+  },
+  {
+    "id": 66,
+    "Alphabet": "A",
+    "dawurogna": "Ak’i keso goowe aco gidee",
+    "dawurogna_phonetic": "አቅ ከሶ ጎዌ አጮ ጊዴ።",
+    "amharic_translation": "ሳይርቅ በቅርቡ ሳይደርቅ በእርጥቡ።"
+  },
+  {
+    "id": 67,
+    "Alphabet": "A",
+    "dawurogna": "Asa na'aynne akkaa maray kare wos’ee.",
+    "dawurogna_phonetic": "አሳ ናአይነ አካ ማራይ ካረ ወጸ።",
+    "amharic_translation": "ባዕድ ሥር የለውም።"
+  },
+  {
+    "id": 68,
+    "Alphabet": "A",
+    "dawurogna": "Asaa baccaan /gossiyan/ ayfe parssuwaa wotsoppa.",
+    "dawurogna_phonetic": "አሳ ባጫን አይፌ ፓርሷ ወፆፓ።",
+    "amharic_translation": "የተውሶ ይሄዳል ተመልሶ።"
+  },
+  {
+    "id": 69,
+    "Alphabet": "A",
+    "dawurogna": "Asaa barssu woy doonaappe daree woy laafee.",
+    "dawurogna_phonetic": "አሳ ባርሱ ወይ ዶናፐ ዳረ ወይ ላፈ።",
+    "amharic_translation": "የሰውን ነገር ስንቱን ልናገር።"
+  },
+  {
+    "id": 70,
+    "Alphabet": "A",
+    "dawurogna": "Asaa miyaa manatto kanay mee.",
+    "dawurogna_phonetic": "አሳ ሚይያ ማናቶ ካናይ መ።",
+    "amharic_translation": "ለትሉም አሞራ አለው።"
+  },
+  {
+    "id": 71,
+    "Alphabet": "A",
+    "dawurogna": "Asaa na’aw goowe yelo na'wu gidee.",
+    "dawurogna_phonetic": "አሳ ናአው ጎዌ የሎ ናአው ግዴ።",
+    "amharic_translation": "ሥራ ለሠሪው እሾህ ለአጣሪው።"
+  },
+  {
+    "id": 72,
+    "Alphabet": "A",
+    "dawurogna": "Asaa k’ulliyawu kanay geyaa ek’ee.",
+    "dawurogna_phonetic": "አሳ ቁሊያው ካናይ ገያ ኤቄ።",
+    "amharic_translation": "ሲሉ ሰምታ ዶሮ ገመድ ይዛ ወጣች።"
+  },
+  {
+    "id": 73,
+    "Alphabet": "A",
+    "dawurogna": "Asaa k’ulliyawu kuttuu penggiya hokkii gelee.",
+    "dawurogna_phonetic": "አሳ ቁሊያው ኩቱ ፐንጊያ ሆክ ገለ።",
+    "amharic_translation": "ሲወልዱ አይታ በጠጡዋን ጣለች።"
+  },
+   {
+    "id": 74,
+    "Alphabet": "A",
+    "dawurogna": "Asaa yewuwa hayzzi sisenawo abbo baawa.",
+    "dawurogna_phonetic": "አሳ የውዋ ሀይዚ ስስናወ አቦ ባዋ።",
+    "amharic_translation": "ነገርን አዳምጦ እህልን አላምጦ።"
+  },
+  {
+    "id": 75,
+    "Alphabet": "A",
+    "dawurogna": "Asaa gadii alloyee asaray kalloyee.",
+    "dawurogna_phonetic": "አሳ ጋዲ አሎየ አሳራይ ካሎየ።",
+    "amharic_translation": "የሰው ልጅ ካላሀገሩ ጎራዴ ካልሰፈሩ።"
+  },
+  {
+    "id": 76,
+    "Alphabet": "A",
+    "dawurogna": "Asaappe aad’awaa ankkuu katsaappe aad’awaa kafuu mee.",
+    "dawurogna_phonetic": "አሳፐ አዳዋ አንኩ ካፃፐ አዳዋ ካፉ መ።",
+    "amharic_translation": "ከባልንጀሮቿ ከፍ ያለች ማሽላ ወይም ለወፍ ወይም ለወንጭፍ።"
+  },
+  {
+    "id": 77,
+    "Alphabet": "A",
+    "dawurogna": "Asaappe iitay asaa kasiyaan borina achchaappe iitay kasiyaan miiccee.",
+    "dawurogna_phonetic": "አሳፐ ኢታይ አሳ ካሲያን ቦሪና አቻፐ ኢታይ ካሲያን ሚጨ።",
+    "amharic_translation": "ዝንጀሮ የቂጧን መላጣ ሳታይ በልጇ ትስቃለች።"
+  },
+  {
+    "id": 78,
+    "Alphabet": "A",
+    "dawurogna": "Asatta bare okkataw waassina kanatta bare gadi'owu waassawu.",
+    "dawurogna_phonetic": "አሳታ ባረ ኦካታው ዋስና ካናታ ባረ ጋዲኦው ዋሳው።",
+    "amharic_translation": "አንዱ በጠኔ አንዱ በቁንጣን ይሞታል።"
+  },
+  {
+    "id": 79,
+    "Alphabet": "A",
+    "dawurogna": "Asaw asay d’ale.",
+    "dawurogna_phonetic": "አሳው አሳይ ዳሌ።",
+    "amharic_translation": "ሰው ለሰው መድኃኒቱ ነው።"
+  },
+  {
+    "id": 80,
+    "Alphabet": "A",
+    "dawurogna": "Asawa amottiyaawe barewaa d’ayee.",
+    "dawurogna_phonetic": "አሳዋ አሞቲያዌ ባረዋ ዳዬ።",
+    "amharic_translation": "የሰውን ፈላጊ የራሱን ያጣል።"
+  },
+  {
+    "id": 81,
+    "Alphabet": "A",
+    "dawurogna": "Asay amannettena haatsay cuucumettenna.",
+    "dawurogna_phonetic": "አሳይ አማነተና ሀፃይ ጩጩመተና።",
+    "amharic_translation": "ሰው ያመነ ዉሃ የዘገነ።"
+  },
+  {
+    "id": 82,
+    "Alphabet": "A",
+    "dawurogna": "Asay bare dabbuwakko shiik’ina togooguu osha ak’o shiik’ee.",
+    "dawurogna_phonetic": "አሳይ ባረ ዳቡዋኮ ሺቅና ቶጎጉ ኦሻ አቆ ሺቄ።",
+    "amharic_translation": "ዘመድ ከዘመዱ አህያ ከአመዱ።"
+  },
+  {
+    "id": 83,
+    "Alphabet": "A",
+    "dawurogna": "Asay do'aw, do'ay asawu yayina ogii mela ak’ee.",
+    "dawurogna_phonetic": "አሳይ ዶአው ዶአይ አሳው ያይና ኦጊ መላ አቄ።",
+    "amharic_translation": "ሰው አውሬን ፈርቶ አውሬ ሰውን ፈርቶ መንገድ ባዶ ያድራል።"
+  },
+  {
+    "id": 84,
+    "Alphabet": "A",
+    "dawurogna": "Asay laa''a shin donuu baatsa.",
+    "dawurogna_phonetic": "አሳይ ላአሽን ዶኑ ባፃ።",
+    "amharic_translation": "አይተህ ቁረስ ከጥርስህ እንዲደርስ።"
+  },
+  {
+    "id": 85,
+    "Alphabet": "A",
+    "dawurogna": "Asay laa'’u bagga bayzzina oduu oyddu bagga bayzzee.",
+    "dawurogna_phonetic": "አሳይ ላኡ ባጋ ባይዝና ኦዱ ኦይዱ ባጋ ባይዘ።",
+    "amharic_translation": "ጦርነት ከፈታው ወሬ የፈታው።"
+  },
+  {
+    "id": 86,
+    "Alphabet": "A",
+    "dawurogna": "Asay S’oossi peeshshosa'an peeshee.",
+    "dawurogna_phonetic": "አሳይ ጾሲ ፐሾ ሳአን ፐሸ።",
+    "amharic_translation": "ሰው እግዚአብሔር ባዋለበት ይውላል።"
+  },
+  {
+    "id": 87,
+    "Alphabet": "A",
+    "dawurogna": "Ashkkarii bare goda d’uman derek’ee.",
+    "dawurogna_phonetic": "አሽካሪ ባረ ጎዳ ዱማን ደረቄ።",
+    "amharic_translation": "ያላቻ ጋብቻ ቆይ ብቻ ቆይ ብቻ።"
+  },
+  {
+    "id": 88,
+    "Alphabet": "A",
+    "dawurogna": "Ashuu attuwa giina acuu attuwa gee.",
+    "dawurogna_phonetic": "አሹ አቱዋ ጊና አጩ አቱዋ ገ።",
+    "amharic_translation": "ሥጋ ቀረ ቢሉ ዕዳ ቀረ።"
+  },
+  {
+    "id": 89,
+    "Alphabet": "A",
+    "dawurogna": "Ashu sa'an wod’iide buura akkenaan denddii?",
+    "dawurogna_phonetic": "አሹ ሳአን ወዲዴ ቡራ አከናን ደንዲ?",
+    "amharic_translation": "ሥጋ መሬት ወድቆ አፈር ሳይዝ አይነሳም።"
+  },
+  {
+    "id": 90,
+    "Alphabet": "A",
+    "dawurogna": "Ashuwa aatha siik’awu ganjjiyaa sikka mayyawu.",
+    "dawurogna_phonetic": "አሹዋ አፃ ሲቃው ጋንጂያ ሲካ ማያው።",
+    "amharic_translation": "ሥጋ አብልጣ ከመውደዷ የተነሳ ሰምበር ሰፍታ ትለብሳለች።"
+  },
+  {
+    "id": 91,
+    "Alphabet": "A",
+    "dawurogna": "Ashuwa dosiyaawe asho kallo attee.",
+    "dawurogna_phonetic": "አሹዋ ዶስያዌ አሾ ካሎ አቴ።",
+    "amharic_translation": "ሥጋ የሚወድ እርቃኑን ይቀራል።"
+  },
+  {
+    "id": 92,
+    "Alphabet": "A",
+    "dawurogna": "Ashuwaa iitaa kanaw yewuwaa itta byiirawu imme",
+    "dawurogna_phonetic": "የሥጋን መጥፎ ለዉሻ የነገርን መጥፎ ለሽማግሌ ይሰጡታል፡፡",
+    "amharic_translation": ""
+  },
+  {
+    "id": 93,
+    "Alphabet": "A",
+    "dawurogna": "Ashuwa payda giina lans’iya itta gee.",
+    "dawurogna_phonetic": "አሹዋ ፓይዳ ጊና ላንጺያ እታ ገ።",
+    "amharic_translation": "ሥጋ ቁጠር ቢሉት ጣፊያ አንድ ይላል።"
+  },
+  {
+    "id": 94,
+    "Alphabet": "A",
+    "dawurogna": "Ashuwa k’oppa k’oodhii laappun kooraano oyssan simmenna.",
+    "dawurogna_phonetic": "አሹዋ ቆፓ ቆዲ ላፑን ኮራኖ ኦይሳን ሲመና።",
+    "amharic_translation": "ምኞትና ጉም አይጨበጥም።"
+  },
+  {
+    "id": 95,
+    "Alphabet": "A",
+    "dawurogna": "Ashuwaa immiide goloodduwa diggee.",
+    "dawurogna_phonetic": "አሹዋ እምዴ ጎሎዱዋ ድጌ።",
+    "amharic_translation": "ሥጋ ሰጥተው ቢላዋ ነሱ።"
+  },
+  {
+    "id": 96,
+    "Alphabet": "A",
+    "dawurogna": "Ashuwaa mi kalliide zo’o miizza is’ee.",
+    "dawurogna_phonetic": "አሹዋ ሚ ካሊዴ ዞኦ ሚዛ እፃ።",
+    "amharic_translation": "ሥጋ ያንገፈገፈው ቀይ በሬ ሲያይ ይሸሻል።"
+  },
+  {
+    "id": 97,
+    "Alphabet": "A",
+    "dawurogna": "Ashuwanne asaanna meeshshin leeki udobee?",
+    "dawurogna_phonetic": "አሹዋነ አሳና መ ሺን ሌኪ ኡዶቤ?",
+    "amharic_translation": "ብቻውን የበላ ብቻውን ይሞታል።"
+  },
+  {
+    "id": 98,
+    "Alphabet": "A",
+    "dawurogna": "Asinay hayana ek’iide nuuchchay k’arethee.",
+    "dawurogna_phonetic": "ባል ሊሞት ሲል የባል ወንድም ያሳሳል::",
+    "amharic_translation": ""
+  },
+  {
+    "id": 99,
+    "Alphabet": "A",
+    "dawurogna": "Asinay wad’d’awa banbbarii poogawa.",
+    "dawurogna_phonetic": "አስናይ ወዳዋ ባንባሪ ፖጋዋ::",
+    "amharic_translation": "ባል ካልተማታ በርበሬ ካልተፋጀ ዋጋ የለዉም፡፡"
+  },
+  {
+    "id": 100,
+    "Alphabet": "A",
+    "dawurogna": "Asinaynne oshinchchay ogiyaappe oyk’ee.",
+    "dawurogna_phonetic": "አስናይነ ኦሽንቻይ አጊያፐ ኦይቄ፡፡",
+    "amharic_translation": "ባልና ጉንፋን በድንገት ይገኛል/ይይዛል፡፡"
+  },
+  {
+    "id": 101,
+    "Alphabet": "A",
+    "dawurogna": "Asu iita dennee /gidene/.",
+    "dawurogna_phonetic": "አሱ ኢታ ግደነ፡፡",
+    "amharic_translation": "ለሰዉ ሞት አነሰዉ፡፡"
+  },
+  {
+    "id": 102,
+    "Alphabet": "A",
+    "dawurogna": "Atoppe asee naw oykooppe kaysee naw gee kaysuu.",
+    "dawurogna_phonetic": "አቶፐ አሰናዉ ኦይቆፐ ካይሰናዉ፡፡",
+    "amharic_translation": ""
+  },
+  {
+    "id": 104,
+    "Alphabet": "A",
+    "dawurogna": "Attennasan booray ginddaa mentsee.",
+    "dawurogna_phonetic": "አተናሳን ቦራይ ግንዳ መንፀ፡፡",
+    "amharic_translation": "ላታመልጭ አትሩጪ፡፡ በሬና በሬ መከሩ ቀንበር ሰበሩ፡፡"
+  },
+  {
+    "id": 105,
+    "Alphabet": "A",
+    "dawurogna": "Aatti sintsan maraa shukkii?",
+    "dawurogna_phonetic": "አቲ ስንፃን ማራ ሹኪ?",
+    "amharic_translation": "በእናት ፊት ልጇ አይታረድ፡፡"
+  },
+  {
+    "id": 106,
+    "Alphabet": "A",
+    "dawurogna": "Aatto be’abeyukkushshin wogga atto laamotawu.",
+    "dawurogna_phonetic": "አቶ በአበይኩሽን ወጋአቶ ላሞታዉ፡፡",
+    "amharic_translation": "አባቷን አታዉቅ በአያቷ ትምላለች፡፡"
+  },
+  {
+    "id": 107,
+    "Alphabet": "A",
+    "dawurogna": "Awayonttuwaa/ Dadaawaa bonyaan haasayana.",
+    "dawurogna_phonetic": "አዋዮንቱዋ/ዳዳዋ ቦንያን ሀሳያና፡፡",
+    "amharic_translation": "ለሁሉም ጊዜ አለዉ፡፡"
+  },
+  {
+    "id": 108,
+    "Alphabet": "A",
+    "dawurogna": "Awuk’aallewu gaawe aafotina alawuk’im gaawee attee.",
+    "dawurogna_phonetic": "አዉቃለሁ ጋዌ አፎቲና አላዉቅም ጋዌ አተ::",
+    "amharic_translation": "እዉቀት ያደርሳል ከሞት፡፡"
+  },
+  {
+    "id": 109,
+    "Alphabet": "A",
+    "dawurogna": "Awuri k’ons’a dancce addii maanna zal''ee.",
+    "dawurogna_phonetic": "አዉሪ ቆንፃ ዳንጨ፤ አዲ ማና ዛልኤ፡፡",
+    "amharic_translation": "የማይቻል ወይንም የማይሆነዉን ነገር መሞከር፡፡"
+  },
+  {
+    "id": 110,
+    "Alphabet": "A",
+    "dawurogna": "Aawuwan allek’iya na'ay dadawu yanbbarshsha olee",
+    "dawurogna_phonetic": "አዉዋን አማነታ ናአይ ዳዳዉ ያንባርሻ አለ፡፡",
+    "amharic_translation": "በአባቱ የሚመካ ልጅ ለመብረቅ ወንጭፍ ይልካል፡፡"
+  },
+  {
+    "id": 111,
+    "Alphabet": "A",
+    "dawurogna": "As’aari ulu'wa odina lans’iya k’ans’e.",
+    "dawurogna_phonetic": "አጻሪ ኡሉዋ ኦዲና ላንጺያ ቃንጼ፡፡",
+    "amharic_translation": "ያመኑት ፈረስ በደንደስ፡፡"
+  },
+  {
+    "id": 112,
+    "Alphabet": "A",
+    "dawurogna": "Ayee giya gimirattonne ayaa moo giyaa babark’iya aye gatseeddee?",
+    "dawurogna_phonetic": "አያሞ ጊያ ጊምራቶነ አያ ሞ ጊያ ባባርቂያ አየ ጋፀዴ?",
+    "amharic_translation": "እግር ሲሳት ከአንዳ፤ አፍ ሲሳሳት ከዕዳ፡፡"
+  },
+  {
+    "id": 113,
+    "Alphabet": "A",
+    "dawurogna": "Ayfiya woocina ta sip’intsay bayana gee gezu.",
+    "dawurogna_phonetic": "አይፊያ ወጪና ታስጲንፃይ ባያነ ገ ገዙ፡፡",
+    "amharic_translation": "ዋናዉን ጉዳይ ችላ ብሎ ለማይጠቅመዉ ቅድሚያ መስጠት፡፡"
+  },
+  {
+    "id": 114,
+    "Alphabet": "A",
+    "dawurogna": "Ayi d’ayaa boddoosontto laafaa caak’ay?",
     "dawurogna_phonetic": "",
     "amharic_translation": ""
   },
+  {
+    "id": 115,
+    "Alphabet": "A",
+    "dawurogna": "Ayi d’ayaa tsoossawu ittuwaa s’aaggay?",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+  {
+    "id": 116,
+    "Alphabet": "A",
+    "dawurogna": "ashsho baawa afirawu bonk’o baawa.",
+    "dawurogna_phonetic": "",
+    "amharic_translation": ""
+  },
+  {
+    "id": 117,
+    "Alphabet": "A",
+    "dawurogna": "Azalla toomay dubbushaan me''ee",
+    "dawurogna_phonetic": "አዛላ ቶማይ ዱቡሻን መኤ።",
+    "amharic_translation": "ካያያዝ ይቀደዳል ከአነጋገር ይፈረዳል።"
+  },
+  {
+    "id": 118,
+    "Alphabet": "A",
+    "dawurogna": "Azallay sanbbatan ootsee",
+    "dawurogna_phonetic": "አዛላይ ሳንባታን ኦፀ።",
+    "amharic_translation": "ሰነፍ ሰው በሰንበት ይሰራል።"
+  },
+   {
+    "id": 119,
+    "Alphabet": "B",
+    "dawurogna": "Baaccira bashii me''ina Kafan ogii duuxxee.",
+    "dawurogna_phonetic": "ባጪራ ባሺ መኢና ካፋን  ኢጊ ዱጼ።",
+    "amharic_translation": "በሰበቡ መምሬ ተሳቡ።"
+  },
+  {
+    "id": 120,
+    "Alphabet": "B",
+    "dawurogna": "Baalle goda baacciray metina Ibada goda buuraatu cuullee.",
+    "dawurogna_phonetic": "ባለ ጎዳ ባጭራይ መቲና ኢባዳ ጎዳ ቡራቱ ጩሌ።",
+    "amharic_translation": "ባንዱ ቤት ደስታ ባንዱ ቤት ሃዘን።"
+  },
+   {
+    "id": 121,
+    "Alphabet": "B",
+    "dawurogna": "Baana danggarssay s’ap’uwappe miina de'ana danggarssay haytsaa mee.",
+    "dawurogna_phonetic": "ባና ዳንጋርሳይ ጻጷዋፐ ሚና ደአና ዳንጋርሳይ ሀይፃ መ።",
+    "amharic_translation": "ሊኮበልል ያሰበ ዝሆን ከነግንዱ ሲበላ ለመኖር ያሰበ ቅጠል ቅጠሉን ይበላል።"
+  },
+  {
+    "id": 122,
+    "Alphabet": "B",
+    "dawurogna": "Baana iray diis’ii /baanaa/ bukkee.",
+    "dawurogna_phonetic": "ባና ኢራይ ዲፂ ቡኬ።",
+    "amharic_translation": "እኔ ከሞትኩ ሰርዶ አይብቀል።"
+  },
+  {
+    "id": 123,
+    "Alphabet": "B",
+    "dawurogna": "Baanay bidintsaa ha sipuuu gee.",
+    "dawurogna_phonetic": "ባናይ ቤዲንፃ ሀ ሴጱ ጌ።",
+    "amharic_translation": "አመድ በዱቄት ይስቃል።"
+  },
+  {
+    "id": 124,
+    "Alphabet": "B",
+    "dawurogna": "Baatsay biittaw maaddee.",
+    "dawurogna_phonetic": "ባፃይ ቢታው ማዴ።",
+    "amharic_translation": "ዘመድ ከዘመድ አህያ ከአመድ።"
+  },
+  {
+    "id": 125,
+    "Alphabet": "B",
+    "dawurogna": "Baawa gaanawaappe gooyyiyaa ishay de'o.",
+    "dawurogna_phonetic": "ባዋ ጋናዋፐ ጎይያ እሻይ ደአ።",
+    "amharic_translation": "ወጥና ወንድም ማስፈራሪያ ነው።"
+  },
+  {
+    "id": 126,
+    "Alphabet": "B",
+    "dawurogna": "Babantsay baasennaan kees’ee, baaburi gayirennaan gaaccee.",
+    "dawurogna_phonetic": "ባባንፃይ ባሰናን ከጸ ባቡሪ ጋይረናን ጋጨ።",
+    "amharic_translation": "ሸማነ በመኑ ጠይብ ከሰሉ።"
+  },
+  {
+    "id": 127,
+    "Alphabet": "B",
+    "dawurogna": "Babark’ii miizzatti wokayiya oyk’i diggiide macca maratto yela gee.",
+    "dawurogna_phonetic": "ባባርቂ ምዛቲ ወካይያ ኦይቂ ድግዴ ማጫ ማራቶ የላ ገ።",
+    "amharic_translation": "ጅብ የላሚቷን ግት ከበላ በኋላ ሴት ጥጃ ውለጂ ይላል።"
+  },
+  {
+    "id": 128,
+    "Alphabet": "B",
+    "dawurogna": "Babark’iya galbbani waas’o diitsay diis’oode maana maana gee guwa.",
+    "dawurogna_phonetic": "ባባርቂያ ጋልባን ዋጾ ድፃይ ዲጾዴ ማና ማና ገ ጉዋ።",
+    "amharic_translation": "ከጅብ ቆዳ የተሰራ ክራር ቢጫወቱት ልብላ ልብላ ይላል።"
+  },
+  {
+    "id": 129,
+    "Alphabet": "B",
+    "dawurogna": "Babark’iya isikaamaappe gaammuwa bo''ay lo''a.",
+    "dawurogna_phonetic": "ባባርቂያ እስካማፐ ጋሙዋ ቦአይ ሎአ።",
+    "amharic_translation": "ከጅብ ጎፈሪያም ያንበሳ መላጣ።"
+  },
+  {
+    "id": 130,
+    "Alphabet": "B",
+    "dawurogna": "Babbark’ii aginaan yedertso kanay gallassi kare kesenna.",
+    "dawurogna_phonetic": "ባባሪቂ አግናን የደርፆ ካናይ ጋላሲ ካሬ ከሰና።",
+    "amharic_translation": "ጅብ በጨረቃ ብርሃን ያባረረው ውሻ ቀን ወደውጭ አይወጣም።"
+  },
+  {
+    "id": 131,
+    "Alphabet": "B",
+    "dawurogna": "Babbirssa daruu shi'aa akee.",
+    "dawurogna_phonetic": "ባቢርሳ ዳሩ ሺአ አከ።",
+    "amharic_translation": "አለማረፍ ጣር ያበዛል።"
+  },
+  {
+    "id": 132,
+    "Alphabet": "B",
+    "dawurogna": "Bacca laammo giina buliya laamawu.",
+    "dawurogna_phonetic": "ባጫ ላሞ ጊና ቡሊያ ላማው።",
+    "amharic_translation": "አልሸሹም ዞር አሉ።"
+  },
+  {
+    "id": 133,
+    "Alphabet": "B",
+    "dawurogna": "Baccay bare heeran shuchcha mentsee.",
+    "dawurogna_phonetic": "ባጫይ ባረ ሄራን ሹቻ መንፀ።",
+    "amharic_translation": "ጊዜ የሰጠው ቅል ድንጋይ ይሰብራል።"
+  },
+  {
+    "id": 134,
+    "Alphabet": "B",
+    "dawurogna": "Badala zeriidde shoco kanay lammi badalay  gaakina zaari gakennaan attee.",
+    "dawurogna_phonetic": "ባዳላ ዘሪደ ሾጮ ካናይ ላሚ ባዳላይ ጋኪና ዛሪ ጋከናን አቴ።",
+    "amharic_translation": "ቦቆሎ እየዘሩ የመቱት ውሻ በቆሎ ሲደረስ ተመልሶ ሳይመጣ ይቀራል።"
+  },
+  {
+    "id": 135,
+    "Alphabet": "B",
+    "dawurogna": "Badalaynne magaray haakki de'ii  lo''a.",
+    "dawurogna_phonetic": "ባዳላይነ ማጋራይ ሀኪ ደኢ ሎአ።",
+    "amharic_translation": "በቆሎና ጠላት በሩቁ።"
+  },
+  {
+    "id": 136,
+    "Alphabet": "B",
+    "dawurogna": "Bakkaa soyaan shemppu pod’ee, bakka soyan shendderay pod’ee.",
+    "dawurogna_phonetic": "ባካ ሶያን ሸምፑ ፖዴ ባካ ሶያን ሸንደራይ ፖዴ።",
+    "amharic_translation": "በአንዱ ቤት ደስታ በአንዱ ቤት ሃዘን።"
+  },
+  {
+    "id": 141,
+    "Alphabet": "B",
+    "dawurogna": "Bakuta mooppe otuwa",
+    "dawurogna_phonetic": "ባኩታ ሞፐ ኦቷዋ።",
+    "amharic_translation": "የበሰበሰ ዝናብ አይፈራም።"
+  },
+  {
+    "id": 142,
+    "Alphabet": "B",
+    "dawurogna": "Bala bollotatta baala gallassi hayyawu",
+    "dawurogna_phonetic": "ባላ ቦሎታታ ባላ ጋላሲ ሀያው።",
+    "amharic_translation": "ሰኔና ሰኞ።"
+  },
+  {
+    "id": 143,
+    "Alphabet": "B",
+    "dawurogna": "Balaa ishay sholaa.",
+    "dawurogna_phonetic": "ባላ እሻይ ሾላ።",
+    "amharic_translation": "ግም ለግም አብሮ ያዝግም።"
+  },
+  {
+    "id": 144,
+    "Alphabet": "B",
+    "dawurogna": "Balay uluwa bantta sa'an haamma giyawee.",
+    "dawurogna_phonetic": "ባላይ ኡሉዋ ባንታ ሳአን ሀማ ጊያዌ።",
+    "amharic_translation": "መጥፎው ሆድ ነው ምግብ በሌለበት ቦታ አምጣ የሚል።"
+  },
+  {
+    "id": 145,
+    "Alphabet": "B",
+    "dawurogna": "Balgguwa kessana wolk’anne asuura aatsaana dooriyaa izaawu eree.",
+    "dawurogna_phonetic": "ባልጉዋ ከሳና ወልቃነ አሱራ አፃና ዶሪያ እዛዉ ኤረ።",
+    "amharic_translation": "ከባለቤቱ ያወቀ ቡዳ ነው።"
+  },
+  {
+    "id": 146,
+    "Alphabet": "B",
+    "dawurogna": "Balgguwa shaachcha golliya boniyaan guuddee.",
+    "dawurogna_phonetic": "ባልጉዋ ሻቻ ጎሊያ ቦኒያን ጎደ።",
+    "amharic_translation": "አይነጋ መስሏት ቋት ላይ አራች።"
+  },
+  {
+    "id": 147,
+    "Alphabet": "B",
+    "dawurogna": "Balgguwan ootsenna seesay boniyan woosaw bee.",
+    "dawurogna_phonetic": "ባልጉዋን ኦፀና ሰሳይ ቦኒያን ወሳው ቤ።",
+    "amharic_translation": "በጊዜ የለቀመች ወፍ ሳትራብ ትውላለች።"
+  },
+  {
+    "id": 148,
+    "Alphabet": "B",
+    "dawurogna": "Baliyan k’ees’alenna, shankkaan gereerenna, daguwan boolladenna na'ay laafa.",
+    "dawurogna_phonetic": "ባሊያን ቀጻለና ሻንካን ገረረና ዳጉዋን ቦላደና ናአይ ላፋ።",
+    "amharic_translation": "ወንድ ልጅ ተወልዶ፣ ካልሆነ እንዳንባቱ አመልማሉን ስጡት ይፈትል እንደናቱ።"
+  },
+  {
+    "id": 149,
+    "Alphabet": "B",
+    "dawurogna": "Bankkaya gulashshaawo kantsetta yeekkawu.",
+    "dawurogna_phonetic": "ባኒካያ ጉላሻዋ ካንፀታ የካው።",
+    "amharic_translation": "ማሽላ ለማሽላ ተያይዞ ቆላ።"
+  },
+  {
+    "id": 150,
+    "Alphabet": "B",
+    "dawurogna": "Bak’a baaray gee babark’ii.",
+    "dawurogna_phonetic": "ባቃ ባራይ ገ ባባሪቂ።",
+    "amharic_translation": "ያገኘሁትን እበላለሁ አለ ጅብ።"
+  },
+  {
+    "id": 151,
+    "Alphabet": "B",
+    "dawurogna": "Bak’aa maathay karee kesenna, dadaa unccay golle gelenna.",
+    "dawurogna_phonetic": "ባቃ ማፃይ ካረ ከሰና ዳዳ ኡንጫይ ጎለ ገለና።",
+    "amharic_translation": "አያድርስ የባል ቢስ አያቅፍ አያንተርስ።"
+  },
+  {
+    "id": 152,
+    "Alphabet": "B",
+    "dawurogna": "Bak’i shammowenne banni yelowe itta.",
+    "dawurogna_phonetic": "ባቂ ሻሞወኔ ባኒ የሎወ ኢታ።",
+    "amharic_translation": "ተከራክረው የጉዙትና አምጠው የወለዱት አንድ ነው።"
+  },
+  {
+    "id": 153,
+    "Alphabet": "B",
+    "dawurogna": "Bak’ina bayenna haytsay odina bayee.",
+    "dawurogna_phonetic": "ባቂና ባየና ሀይፃይ ኦዲና ባየ።",
+    "amharic_translation": "በጥፊ ቢመቱት የማይጠፋ ጆሮ በአሉባልታ ይጠፋል።"
+  },
+  {
+    "id": 154,
+    "Alphabet": "B",
+    "dawurogna": "Bak’ulatta gaadiya duutsawu giina barewu k’aamissaaddu gee guwa.",
+    "dawurogna_phonetic": "ባቁላታ ጋዲያ ዱፃው ጊና ባረው ቃሚሳዱ ገ ጉዋ።",
+    "amharic_translation": "በቅሎ ገመድ በጠሰች ቢሉ ለራሷ አሳጠረች።"
+  },
+  {
+    "id": 155,
+    "Alphabet": "B",
+    "dawurogna": "Bak’ulatta k’akkoonnippe panddoonna iitta.",
+    "dawurogna_phonetic": "ባቁላታ ቃኮኒፐ ፓንዶና እታ።",
+    "amharic_translation": "አህያ ከመሞቷ መጎተቷ።"
+  },
+  {
+    "id": 156,
+    "Alphabet": "B",
+    "dawurogna": "Baratanawunne baabbirakka.",
+    "dawurogna_phonetic": "ባራታናውነ ናቢራካ።",
+    "amharic_translation": "የማያዛልቅ ፀሎት ለቅፅፈት።"
+  },
+  {
+    "id": 161,
+    "Alphabet": "B",
+    "dawurogna": "Bare aabba be'i beennashin bare wogga aabbun caak’ee.",
+    "dawurogna_phonetic": "ባረ አባ በኢ በናሽን ባረ ወጋ አቡን ጫቄ።",
+    "amharic_translation": "አባቱን የማያውቅ ባያቱ ይምላል።"
+  },
+  {
+    "id": 162,
+    "Alphabet": "B",
+    "dawurogna": "Bare bayrawu bareeta tookkenawe asaa bayirawu baad’aana tookkee.",
+    "dawurogna_phonetic": "ባረ ባይራው ባረታ ቶከናወ አሳ ባይራው ባዳና ቶከ።",
+    "amharic_translation": "መከዳትና መኮብለል ወድቆ መንከባለል።"
+  },
+  {
+    "id": 163,
+    "Alphabet": "B",
+    "dawurogna": "Bare gadiyaan bak’in hayenna uduuns’i asaa gaden punnina hayyee.",
+    "dawurogna_phonetic": "ባረ ጋዲያን ባቂን ሃየና ኢዱንጺ አሳ ጋደን ፑኒና ሃየ።",
+    "amharic_translation": "ከሀገሩ የወጣ ሀገሩ እስኪመለስ ቢጭኑት አህያ ቢቀመጡት ፈረስ።"
+  },
+  {
+    "id": 164,
+    "Alphabet": "B",
+    "dawurogna": "Bare goda k’oppa dorssatta bare nasiyaa /dufiyaa/ karen ayssawu.",
+    "dawurogna_phonetic": "ባረ ጎዳ ቆፖ ዶርሳታ ባረ ናስያ ካረን አይሳው።",
+    "amharic_translation": "ጌታዋን የምታምን ውሻ ፊሪዳ ሲታረድ እወንዝ ወረደች።"
+  },
+  {
+    "id": 165,
+    "Alphabet": "B",
+    "dawurogna": "Bare ifitha shoorowu gars’iide barewu babark’iyan meetettee.",
+    "dawurogna_phonetic": "ባረ እፊፃ ሾሩዋው ጋርጺ ባረው ባባሪቂያን መተተ።",
+    "amharic_translation": "ሞኝ ለጋስ እራቱን ለሰው ሰጥቶ ራሱ ጾሙን ያድራል።"
+  },
+  {
+    "id": 166,
+    "Alphabet": "B",
+    "dawurogna": "Bare soyaa kuuma wotsiide asaa soyaa kuussa boree.",
+    "dawurogna_phonetic": "ባረ ሶያ ኩማ ወፂደ አሳ ሶያ ኩሳ ቦረ።",
+    "amharic_translation": "አመድ በዱቀት ላይ ይስቃል።"
+  },
+  {
+    "id": 167,
+    "Alphabet": "B",
+    "dawurogna": "Bare soyaa k’ook’a wotsiide asaa soyaa geella miiccee.",
+    "dawurogna_phonetic": "ባረ ሶያ ቆቃ ወፂደ አሳ ሶያ ገላ ሚጨ።",
+    "amharic_translation": "አመድ በዱቀት ላይ ይስቃል።"
+  },
+  {
+    "id": 168,
+    "Alphabet": "B",
+    "dawurogna": "Baree tumuwappe aggennawenne bare k’umaappe mizennawe asaanna de'enna.",
+    "dawurogna_phonetic": "ባረ ቱሙዋፐ አገናወነ ባረ ቁማፐ ሚዘናወ አሳና ደኤና።",
+    "amharic_translation": "አውቆ መተው ነገርን ከተተው።"
+  },
+  {
+    "id": 169,
+    "Alphabet": "B",
+    "dawurogna": "Bareewoo banbbark’i asaawo holok’u.",
+    "dawurogna_phonetic": "ባረዎ ባንባሪቂ አሳዎ ሆሎቁ።",
+    "amharic_translation": "እዩኝ እዩኝ ያለች ደብቁኝ ደብቁኝ ትላለች።"
+  },
+  {
+    "id": 170,
+    "Alphabet": "B",
+    "dawurogna": "Baressa giide uuc’c’a kushee so simmi tangga gedee.",
+    "dawurogna_phonetic": "ባረሳ ጊዴ ኡጫ ኩሼ ሶ ስሚ ታንጋ ገዴ።",
+    "amharic_translation": "ለራስ ሲቆርሱ አያሳንሱ።"
+  },
+  {
+    "id": 171,
+    "Alphabet": "B",
+    "dawurogna": "Baressa giina aday ashuwa mus’ee.",
+    "dawurogna_phonetic": "ባረሳ ጊና አዳይ አሹዋ ሙጸ።",
+    "amharic_translation": "ለራስ ሲቆርሱ አያሳንሱ።"
+  },
+  {
+    "id": 172,
+    "Alphabet": "B",
+    "dawurogna": "Baressa giina baacay uncca cood’d’ee.",
+    "dawurogna_phonetic": "ባረሳ ጊና ባጫይ ኡንጫ ጮዴ።",
+    "amharic_translation": "ለራስ ሲቆርሱ አያሳንሱ።"
+  },
+  {
+    "id": 173,
+    "Alphabet": "B",
+    "dawurogna": "Barew zoliya mawushshin kana laappunuwa dichchaw.",
+    "dawurogna_phonetic": "ባረው ዞሊያ ማውሽን ካና ላፑኑያ ዲቻው።",
+    "amharic_translation": "አባይ ለራሱ ማረፊያ የለውም ግንድ ይሸከማል።"
+  },
+  {
+    "id": 174,
+    "Alphabet": "B",
+    "dawurogna": "Barewa erennashin asaw d’aliya duutsee shareechchuu.",
+    "dawurogna_phonetic": "ባሬዋ ኤረናሽን አሳው ዳሊያ ዱተ ሻረቹ።",
+    "amharic_translation": "አንቃ ለራሱ አልበቃ ለሰው ጠበቃ።"
+  },
+  {
+    "id": 175,
+    "Alphabet": "B",
+    "dawurogna": "Barewu balettaanna d’uman hamettaade shulluurindda iita gaw.",
+    "dawurogna_phonetic": "ባረው ባለታና ዱማን ሀመታዴ ሹሉሪንዳ እታ ጋው።",
+    "amharic_translation": "የቀበጠች አይጥ የድመትን አፍንጫ ታሸታለች።"
+  },
+  
    {
     "id": 29,
     "Alphabet": "",

@@ -23,7 +23,7 @@ class About extends StatelessWidget {
           ),
         ),
       ),
-      body: Center(child: DetailContainer()),
+      body: Center(),
     );
   }
 }

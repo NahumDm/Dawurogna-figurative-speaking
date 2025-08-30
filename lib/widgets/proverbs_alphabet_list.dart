@@ -1,84 +1,77 @@
 import 'package:dawurogna_figurative_speaking/Core/Constants/constants.dart';
+import 'package:dawurogna_figurative_speaking/Provider/proverbs_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:go_router/go_router.dart';
-
-List<String> getProverbsForAlphabet(String alphabet) {
-  // TODO: Replace with your actual logic to fetch proverbs for the given alphabet
-  // Example implementation:
-  Map<String, List<String>> proverbsMap = {
-    'A': ['A proverb for A', 'Another proverb for A'],
-    'B': ['A proverb for B', 'Another proverb for B'],
-    // Add more alphabets and proverbs as needed
-  };
-  return proverbsMap[alphabet] ?? [];
-}
+import 'package:provider/provider.dart';
 
 class AlphabetListTile extends StatelessWidget {
-  const AlphabetListTile({super.key, required this.onTap});
-
-  final VoidCallback onTap;
+  const AlphabetListTile({super.key});
 
   @override
   Widget build(BuildContext context) {
     final selectedAlphabet =
-        GoRouterState.of(context).pathParameters['alphabet'] ?? '';
+        GoRouterState.of(context).pathParameters['alphabet'] ??
+        ''; //get selected alphabet from router parameters
 
-    // Replace this with your actual list of proverbs for the selected alphabet
-    final List<String> proverbsForAlphabet = getProverbsForAlphabet(
+    // Watch provider for change
+    final provider = context.watch<ProverbsProvider>();
+
+    final proverbsForAlphabet = provider.getProverbsByAlphabet(
       selectedAlphabet,
-    );
+    ); // get filtered list of proverbs from the provider
 
     return Scaffold(
       backgroundColor: Constants.background,
       appBar: AppBar(
+        backgroundColor: Constants.background,
         leading: IconButton(
           onPressed: () => context.pop(),
           icon: FaIcon(FontAwesomeIcons.arrowLeft),
         ),
         centerTitle: true,
         title: Text(
-          "'$selectedAlphabet' ቤት",
+          " ' $selectedAlphabet ' ",
           style: TextStyle(fontFamily: 'Roboto', fontWeight: FontWeight.bold),
         ),
       ),
-      body: Column(
-        children: [
-          Expanded(
-            child: ListView.builder(
-              itemCount: proverbsForAlphabet.length,
-              itemBuilder: (context, index) {
-                return Container(
-                  margin: EdgeInsets.symmetric(vertical: 3.0),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(8.0),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Constants.background.withOpacity(0.15),
-                        blurRadius: 4,
-                        offset: Offset(0, 4),
-                      ),
-                    ],
-                  ),
-                  child: ListTile(
+      body:
+          provider.isLoading
+              ? const Center(
+                child: CircularProgressIndicator(), // show loading spinner
+              )
+              : proverbsForAlphabet.isEmpty
+              ? const Center(child: Text('No proverb found for this letter.'))
+              : ListView.separated(
+                itemCount: proverbsForAlphabet.length,
+                itemBuilder: (context, index) {
+                  final proverb =
+                      proverbsForAlphabet[index]; //Get specific proverb
+                  return ListTile(
+                    dense: true,
                     title: Text(
-                      proverbsForAlphabet[index],
+                      proverb.dawurogna,
                       style: TextStyle(
-                        fontSize: Constants.lgFont,
+                        fontSize: Constants.mdFont,
                         fontWeight: FontWeight.bold,
-                        color: Constants.background,
+                        color: Constants.textColor,
                       ),
                     ),
-                    onTap: onTap,
-                  ),
-                );
-              },
-              scrollDirection: Axis.vertical,
-              padding: EdgeInsets.symmetric(vertical: 18.0, horizontal: 0.0),
-            ),
-          ),
-        ],
-      ),
+                    onTap: () {
+                      context.push('/tale/${proverb.id}');
+                    },
+                  );
+                },
+                separatorBuilder:
+                    (context, index) => const Divider(
+                      color: Constants.title,
+                      thickness: 0.2,
+                      height: 0.7,
+                    ),
+
+                scrollDirection: Axis.vertical,
+                padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 2.0),
+              ),
     );
   }
 }

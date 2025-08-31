@@ -52,8 +52,9 @@ class AlphabetListTile extends StatelessWidget {
                     title: Text(
                       proverb.dawurogna,
                       style: TextStyle(
+                        fontFamily: 'OpenSans',
                         fontSize: Constants.mdFont,
-                        fontWeight: FontWeight.bold,
+                        fontWeight: FontWeight.w500,
                         color: Constants.textColor,
                       ),
                     ),

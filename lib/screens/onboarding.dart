@@ -30,34 +30,25 @@ class Onboarding extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            const Text(
-              'Dawurogna Tales & Saying',
-              style: TextStyle(
-                color: Constants.subtitle,
-                fontFamily: 'Roboto',
-                fontSize: Constants.mdFont,
-                fontWeight: FontWeight.w600,
-              ),
-            ),
-            SizedBox(height: 30.0),
+            const SizedBox(height: 25.0),
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 15.0),
               child: Text(
                 textAlign: TextAlign.center,
-                'Preserving the rich oral traditions and wisdom of the Dawuro people for future generations.',
+                'Dawurotsuwa Tossanne Misayuwa Haasaya Amaaratsuwa Biletsana',
                 style: TextStyle(
                   color: Constants.descriptionColor,
                   fontFamily: 'Open-Sans',
                   fontSize: Constants.smFont,
-                  fontWeight: FontWeight.normal,
+                  fontWeight: FontWeight.w500,
                 ),
               ),
             ),
-            SizedBox(height: 200.0),
+            const SizedBox(height: 200.0),
 
             //Color Indicator
-            ColorIndicator(),
-            SizedBox(height: 15.0),
+            const ColorIndicator(),
+            const SizedBox(height: 15.0),
             // Continue Button
             ContinueButton(
               size: size,

@@ -48,7 +48,7 @@ class _CategoryState extends State<Category> {
         backgroundColor: Constants.background,
         title: Text(
           'ዳውሮኛ ተረትና ምሳሌ',
-          style: TextStyle(
+          style: const TextStyle(
             color: Constants.textColor,
             fontFamily: 'Dash',
             fontSize: Constants.mdFont,
@@ -63,15 +63,6 @@ class _CategoryState extends State<Category> {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              textAlign: TextAlign.justify,
-              'Category',
-              style: TextStyle(
-                fontSize: Constants.xlgFont,
-                fontFamily: 'OpenSans',
-                color: Constants.textColor,
-              ),
-            ),
             Expanded(
               child: ProverbsListView(
                 alphabet: alphabet,
@@ -107,7 +98,7 @@ class ProverbsListView extends StatelessWidget {
       itemCount: alphabet.length,
       itemBuilder: (context, index) {
         return Container(
-          margin: EdgeInsets.symmetric(vertical: 3.0),
+          margin: const EdgeInsets.symmetric(vertical: 3.0),
           decoration: BoxDecoration(
             gradient: LinearGradient(
               colors: [
@@ -124,14 +115,14 @@ class ProverbsListView extends StatelessWidget {
               BoxShadow(
                 color: Constants.background.withOpacity(0.15),
                 blurRadius: 4,
-                offset: Offset(0, 4),
+                offset: const Offset(0, 4),
               ),
             ],
           ),
           child: ListTile(
             title: Text(
               alphabet[index],
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: Constants.lgFont,
                 fontWeight: FontWeight.bold,
                 color: Constants.background,
@@ -142,7 +133,7 @@ class ProverbsListView extends StatelessWidget {
         );
       },
       scrollDirection: Axis.vertical,
-      padding: EdgeInsets.symmetric(vertical: 18.0, horizontal: 0.0),
+      padding: const EdgeInsets.symmetric(vertical: 18.0, horizontal: 0.0),
     );
   }
 }

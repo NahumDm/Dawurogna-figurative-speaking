@@ -1,3 +1,4 @@
+import 'package:dawurogna_figurative_speaking/Core/Constants/constants.dart';
 import 'package:dawurogna_figurative_speaking/Widgets/bottom_navigation.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -9,6 +10,7 @@ class AppShell extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Constants.background,
       body: navigationShell, // This displays the current branch's screen
       bottomNavigationBar: BottomNavigation(
         selectedTabIndex: navigationShell.currentIndex,

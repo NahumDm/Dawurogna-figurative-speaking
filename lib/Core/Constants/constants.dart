@@ -22,7 +22,7 @@ class Constants {
   static const double lgFont = 25.0;
   static const double xlgFont = 26.0;
   static const double mdFont = 18.0;
-  static const double smFont = 14.0;
+  static const double smFont = 16.0;
 
   //Color Indicator Container Size
   static const double containerHeight = 8.0;

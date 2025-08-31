@@ -26,13 +26,13 @@ class BottomNavigation extends StatelessWidget {
         tabBorderRadius: 10,
         tabActiveBorder: Border.all(color: Colors.black, width: 1),
         tabBackgroundColor: Constants.background,
-        padding: EdgeInsets.symmetric(
+        padding: const EdgeInsets.symmetric(
           horizontal: 50,
           vertical: 5,
         ), // navigation bar padding
         tabs: [
-          GButton(icon: FontAwesomeIcons.list, text: 'Category'),
-          GButton(icon: FontAwesomeIcons.circleInfo, text: 'About'),
+          GButton(icon: FontAwesomeIcons.list, text: 'ምድብ'),
+          GButton(icon: FontAwesomeIcons.circleInfo, text: 'ስለ መተግበሪያው'),
         ],
         selectedIndex: selectedTabIndex,
         onTabChange: onTabChange,

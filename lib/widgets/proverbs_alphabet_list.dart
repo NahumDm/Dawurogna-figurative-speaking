@@ -26,13 +26,16 @@ class AlphabetListTile extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Constants.background,
         leading: IconButton(
-          onPressed: () => context.pop(),
-          icon: FaIcon(FontAwesomeIcons.arrowLeft),
+          onPressed: () => context.go('/category'),
+          icon: const FaIcon(FontAwesomeIcons.arrowLeft),
         ),
         centerTitle: true,
         title: Text(
           " ' $selectedAlphabet ' ",
-          style: TextStyle(fontFamily: 'Roboto', fontWeight: FontWeight.bold),
+          style: const TextStyle(
+            fontFamily: 'Roboto',
+            fontWeight: FontWeight.bold,
+          ),
         ),
       ),
       body:
@@ -51,7 +54,7 @@ class AlphabetListTile extends StatelessWidget {
                     dense: true,
                     title: Text(
                       proverb.dawurogna,
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontFamily: 'OpenSans',
                         fontSize: Constants.mdFont,
                         fontWeight: FontWeight.w500,
@@ -71,7 +74,10 @@ class AlphabetListTile extends StatelessWidget {
                     ),
 
                 scrollDirection: Axis.vertical,
-                padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 2.0),
+                padding: const EdgeInsets.symmetric(
+                  vertical: 20.0,
+                  horizontal: 2.0,
+                ),
               ),
     );
   }

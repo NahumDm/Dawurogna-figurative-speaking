@@ -24,8 +24,8 @@ class ContinueButton extends StatelessWidget {
           ),
         ),
         onPressed: onpressed,
-        child: Text(
-          'Continue',
+        child: const Text(
+          'ቀጥል',
           style: TextStyle(
             color: Constants.background,
             fontFamily: 'Roboto',

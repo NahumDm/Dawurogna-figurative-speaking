@@ -7,8 +7,8 @@ class ProverbsProvider with ChangeNotifier {
   List<ProverbModel> _proverbs = [];
   bool _isLoading = false;
 
-  //Public getter to access the list of proverbs
-  List<ProverbModel> get proverbs => _proverbs;
+  //Public getter to access all proverbs to prev/next navigation
+  List<ProverbModel> get allProverbs => _proverbs;
 
   //Public getter to check the loading state
   bool get isLoading => _isLoading;

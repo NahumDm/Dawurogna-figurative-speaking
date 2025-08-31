@@ -18,7 +18,7 @@ final routeProvider = GoRouter(
     GoRoute(
       name: RouteNames.eachAlphabetList,
       path: '/eachAlphabetList/:alphabet',
-      builder: (context, state) => AlphabetListTile(),
+      builder: (context, state) => const AlphabetListTile(),
     ),
     GoRoute(
       name: RouteNames.taleDetail,
@@ -47,7 +47,7 @@ final routeProvider = GoRouter(
             GoRoute(
               name: RouteNames.category,
               path: '/category',
-              builder: (context, state) => Category(),
+              builder: (context, state) => const Category(),
             ),
           ],
         ),
@@ -56,7 +56,7 @@ final routeProvider = GoRouter(
             GoRoute(
               name: RouteNames.about,
               path: '/about',
-              builder: (context, state) => About(),
+              builder: (context, state) => const About(),
             ),
           ],
         ),

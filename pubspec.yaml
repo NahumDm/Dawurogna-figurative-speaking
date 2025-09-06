@@ -18,6 +18,7 @@ dependencies:
   provider: ^6.1.5
   font_awesome_flutter: ^10.8.0
   flutter_launcher_icons: ^0.14.4
+  share_plus: ^11.1.0
 
 flutter_launcher_icons:
   android: "launcher_icon"

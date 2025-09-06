@@ -1,6 +1,7 @@
 import 'package:dawurogna_figurative_speaking/Core/Constants/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:share_plus/share_plus.dart';
 
 class About extends StatelessWidget {
   // final StatefulNavigationShell navigationShell;
@@ -39,7 +40,13 @@ class About extends StatelessWidget {
                   print('Contact Selected');
                   break;
                 case 'share':
-                  print('Shared');
+                  SharePlus.instance.share(
+                    ShareParams(
+                      uri: Uri.parse(
+                        "https://play.google.com/store/apps/details?id=com.example.dawurogna_figurative_speaking",
+                      ),
+                    ),
+                  );
                   break;
               }
             },

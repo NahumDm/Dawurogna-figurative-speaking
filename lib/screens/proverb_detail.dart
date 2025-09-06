@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
-import 'package:flutter/services.dart';
 
 class ProverbDetailScreen extends StatelessWidget {
   final int proverbId;
@@ -136,7 +135,6 @@ class ProverbDetailScreen extends StatelessWidget {
                   if (hasPrevious)
                     IconButton(
                       onPressed: () {
-                        HapticFeedback.heavyImpact();
                         final previousID = allProverbs[currentIndex - 1].id;
                         context.pushReplacement(
                           '/tale/$previousID',
@@ -153,7 +151,6 @@ class ProverbDetailScreen extends StatelessWidget {
                   if (hasNext)
                     IconButton(
                       onPressed: () {
-                        HapticFeedback.heavyImpact();
                         final nextID = allProverbs[currentIndex + 1].id;
                         context.pushReplacement(
                           '/tale/$nextID',

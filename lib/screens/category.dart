@@ -100,22 +100,12 @@ class ProverbsListView extends StatelessWidget {
         return Container(
           margin: const EdgeInsets.symmetric(vertical: 3.0),
           decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                Constants.butttonColor.withOpacity(0.65),
-                Constants.textColor.withOpacity(0.72),
-                Constants.iconColor.withOpacity(0.55),
-                Constants.background.withOpacity(1.0),
-              ],
-              begin: Alignment.bottomLeft,
-              end: Alignment.topRight,
-            ),
             borderRadius: BorderRadius.circular(8.0),
             boxShadow: [
               BoxShadow(
-                color: Constants.background.withOpacity(0.15),
-                blurRadius: 4,
-                offset: const Offset(0, 4),
+                color: Constants.textColor.withOpacity(0.15),
+                blurRadius: 0,
+                offset: const Offset(0, 2),
               ),
             ],
           ),
@@ -124,8 +114,8 @@ class ProverbsListView extends StatelessWidget {
               alphabet[index],
               style: const TextStyle(
                 fontSize: Constants.lgFont,
-                fontWeight: FontWeight.bold,
-                color: Constants.background,
+                fontWeight: FontWeight.w500,
+                color: Constants.textColor,
               ),
             ),
             onTap: () => onTap(alphabet[index]),

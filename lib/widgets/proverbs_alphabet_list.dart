@@ -27,7 +27,10 @@ class AlphabetListTile extends StatelessWidget {
         backgroundColor: Constants.background,
         leading: IconButton(
           onPressed: () => context.go('/category'),
-          icon: const FaIcon(FontAwesomeIcons.arrowLeft),
+          icon: const FaIcon(
+            FontAwesomeIcons.arrowLeft,
+            color: Constants.textColor,
+          ),
         ),
         centerTitle: true,
         title: Text(
@@ -69,7 +72,9 @@ class AlphabetListTile extends StatelessWidget {
                 separatorBuilder:
                     (context, index) => const Divider(
                       color: Constants.title,
-                      thickness: 0.2,
+                      thickness: 0.3,
+                      indent: 15,
+                      endIndent: 10,
                       height: 0.7,
                     ),
 

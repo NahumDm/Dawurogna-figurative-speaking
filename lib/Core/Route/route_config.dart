@@ -5,6 +5,7 @@ import 'package:dawurogna_figurative_speaking/Screens/onboarding.dart';
 import 'package:dawurogna_figurative_speaking/Screens/proverb_detail.dart';
 import 'package:dawurogna_figurative_speaking/Widgets/appshell.dart';
 import 'package:dawurogna_figurative_speaking/Widgets/proverbs_alphabet_list.dart';
+import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 final routeProvider = GoRouter(
@@ -23,13 +24,29 @@ final routeProvider = GoRouter(
     GoRoute(
       name: RouteNames.taleDetail,
       path: '/tale/:id',
-      builder: (context, state) {
-        // 1. Get the 'id' from path parameters. It's a String?.
-        final proverbIdString = state.pathParameters['id'];
-        // 2. Parse the String to an int. Handle potential nulls.
-        final proverbId = int.tryParse(proverbIdString ?? '') ?? 0;
-        // 3. Pass the int to your screen.
-        return ProverbDetailScreen(proverbId: proverbId);
+      pageBuilder: (context, state) {
+        final proverbId = int.tryParse(state.pathParameters['id'] ?? '') ?? 0;
+
+        // Get the slide direction from the 'extra' parameter passed during navigation.
+        // Default to a standard slide-in from the right if no direction is provided.
+        final direction = state.extra as Offset? ?? const Offset(1.0, 0.0);
+
+        return CustomTransitionPage(
+          key: state.pageKey,
+          child: ProverbDetailScreen(proverbId: proverbId),
+          // Define the transition logic directly here
+          transitionsBuilder: (context, animation, secondaryAnimation, child) {
+            return SlideTransition(
+              position: Tween<Offset>(
+                begin: direction,
+                end: Offset.zero,
+              ).animate(
+                CurvedAnimation(parent: animation, curve: Curves.easeOut),
+              ),
+              child: child,
+            );
+          },
+        );
       },
     ),
 

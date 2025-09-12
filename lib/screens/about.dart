@@ -1,4 +1,5 @@
 import 'package:dawurogna_figurative_speaking/Core/Constants/constants.dart';
+import 'package:dawurogna_figurative_speaking/Widgets/contact_bottom_sheet.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:share_plus/share_plus.dart';
@@ -37,7 +38,12 @@ class About extends StatelessWidget {
                   print('update');
                   break;
                 case 'contact':
-                  print('Contact Selected');
+                  showModalBottomSheet(
+                    context: context,
+                    builder: (BuildContext context) {
+                      return const ContactBottomSheet();
+                    },
+                  );
                   break;
                 case 'share':
                   SharePlus.instance.share(

@@ -22,13 +22,15 @@ class ContactBottomSheet extends StatelessWidget {
       color: Constants.background,
       child: Column(
         mainAxisSize: MainAxisSize.min,
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           const Text(
+            textAlign: TextAlign.center,
             'Contact Developer',
             style: TextStyle(
+              fontFamily: 'OpenSans',
               fontSize: Constants.mdFont,
-              fontWeight: FontWeight.bold,
+              fontWeight: FontWeight.w600,
             ),
           ),
           const SizedBox(height: 20),
@@ -36,22 +38,52 @@ class ContactBottomSheet extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               ElevatedButton.icon(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Constants.subtitle,
+                  foregroundColor: Constants.background,
+                  padding: EdgeInsets.all(8.0),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(5.0),
+                  ),
+                ),
                 onPressed: () {
                   _launchUrl(
                     'mailto:nahomdesta.dev@gmail.com?subject=Feedback for Dawurogna App',
                   );
                   Navigator.pop(context); // Close the sheet after tapping
                 },
-                icon: const Icon(Icons.email_outlined),
-                label: const Text('Email'),
+                icon: const FaIcon(FontAwesomeIcons.solidEnvelope),
+                label: const Text(
+                  'Email',
+                  style: TextStyle(
+                    fontFamily: 'Roboto',
+                    fontSize: Constants.mdFont,
+                    letterSpacing: 1.3,
+                  ),
+                ),
               ),
               ElevatedButton.icon(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Constants.subtitle,
+                  foregroundColor: Constants.background,
+                  padding: EdgeInsets.all(8.0),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(5.0),
+                  ),
+                ),
                 onPressed: () {
                   _launchUrl('https://t.me/NahumD');
                   Navigator.pop(context); // Close the sheet after tapping
                 },
                 icon: const FaIcon(FontAwesomeIcons.telegram, size: 20),
-                label: const Text('Telegram'),
+                label: const Text(
+                  'Telegram',
+                  style: TextStyle(
+                    fontFamily: 'Roboto',
+                    fontSize: Constants.mdFont,
+                    letterSpacing: 1.3,
+                  ),
+                ),
               ),
             ],
           ),

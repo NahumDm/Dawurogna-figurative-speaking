@@ -32,7 +32,7 @@ class BottomNavigation extends StatelessWidget {
         ), // navigation bar padding
         tabs: [
           GButton(icon: FontAwesomeIcons.list, text: 'ምድብ'),
-          GButton(icon: FontAwesomeIcons.circleInfo, text: 'ስለ መተግበሪያው'),
+          GButton(icon: FontAwesomeIcons.circleInfo, text: 'ስለ መተግበሪያ'),
         ],
         selectedIndex: selectedTabIndex,
         onTabChange: onTabChange,

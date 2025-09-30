@@ -20,11 +20,12 @@ dependencies:
   flutter_launcher_icons: ^0.14.4
   share_plus: ^11.1.0
   url_launcher: ^6.3.2
+  upgrader: ^12.1.0
 
 flutter_launcher_icons:
   android: "launcher_icon"
   ios: true
-  image_path: "assets/icon/playstore.png"
+  image_path: "assets/icon/icon.png"
   adaptive_icon_background: "#ffffff"
   min_sdk_android: 16
 

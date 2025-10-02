@@ -3,6 +3,8 @@ import 'package:dawurogna_figurative_speaking/Widgets/contact_bottom_sheet.dart'
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:share_plus/share_plus.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:upgrader/upgrader.dart';
 
 class About extends StatelessWidget {
   const About({super.key});
@@ -30,10 +32,51 @@ class About extends StatelessWidget {
             ),
             color: Constants.background,
             icon: const FaIcon(FontAwesomeIcons.ellipsisVertical),
-            onSelected: (String result) {
+            onSelected: (String result) async {
               switch (result) {
                 case 'update':
-                  print('update');
+                  final upgrader = Upgrader();
+                  await upgrader.initialize(); // Ensure Upgrader is initialized
+
+                  if (upgrader.isUpdateAvailable()) {
+                    // Show custom update dialog
+                    showDialog(
+                      context: context,
+                      builder:
+                          (context) => AlertDialog(
+                            title: const Text('Update Available'),
+                            content: Text(
+                              upgrader.releaseNotes ??
+                                  'A new version is available!',
+                            ),
+                            actions: [
+                              TextButton(
+                                onPressed: () => Navigator.of(context).pop(),
+                                child: const Text('Later'),
+                              ),
+                              ElevatedButton(
+                                onPressed: () async {
+                                  final url =
+                                      upgrader.currentAppStoreListingURL;
+                                  if (url != null &&
+                                      await canLaunchUrl(Uri.parse(url))) {
+                                    await launchUrl(
+                                      Uri.parse(url),
+                                      mode: LaunchMode.externalApplication,
+                                    );
+                                  }
+                                },
+                                child: const Text('Update'),
+                              ),
+                            ],
+                          ),
+                    );
+                  } else {
+                    // Show up-to-date message
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(content: Text('Your app is up to date!')),
+                    );
+                  }
                   break;
                 case 'contact':
                   showModalBottomSheet(
@@ -54,6 +97,8 @@ class About extends StatelessWidget {
                   break;
               }
             },
+
+            // More Option Logic
             itemBuilder:
                 (BuildContext context) => <PopupMenuEntry<String>>[
                   const PopupMenuItem(

@@ -9,9 +9,7 @@ class ContactBottomSheet extends StatelessWidget {
   // Helper function to launch URLs safely, encapsulated within this widget
   Future<void> _launchUrl(String url) async {
     final Uri uri = Uri.parse(url);
-    if (!await launchUrl(uri)) {
-      print('Could not launch $url');
-    }
+    if (!await launchUrl(uri)) {}
   }
 
   @override

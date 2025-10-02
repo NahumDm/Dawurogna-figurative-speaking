@@ -23,6 +23,10 @@ class MyApp extends StatelessWidget {
         title: 'ዳውሮኛ ምሳሌያዊ አነጋገር',
         builder: (context, child) {
           return UpgradeAlert(
+            //Check Avaliable App Update
+            upgrader: Upgrader(
+              durationUntilAlertAgain: const Duration(days: 2),
+            ),
             navigatorKey: routeProvider.routerDelegate.navigatorKey,
             child: child ?? Text(''),
           );

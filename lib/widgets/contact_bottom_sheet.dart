@@ -39,7 +39,7 @@ class ContactBottomSheet extends StatelessWidget {
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Constants.subtitle,
                   foregroundColor: Constants.background,
-                  padding: EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(8.0),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(5.0),
                   ),
@@ -64,7 +64,7 @@ class ContactBottomSheet extends StatelessWidget {
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Constants.subtitle,
                   foregroundColor: Constants.background,
-                  padding: EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(8.0),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(5.0),
                   ),

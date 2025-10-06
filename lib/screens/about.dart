@@ -90,7 +90,7 @@ class About extends StatelessWidget {
                   SharePlus.instance.share(
                     ShareParams(
                       uri: Uri.parse(
-                        "https://play.google.com/store/apps/details?id=com.example.dawurogna_figurative_speaking",
+                        "https://play.google.com/store/apps/details?id=com.nahom.dawurogna_figurative_speaking",
                       ),
                     ),
                   );

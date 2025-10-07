@@ -27,7 +27,7 @@ This project aims to digitalize Dawuro Zone's cultural fairy tales and figurativ
 - Dedicated About page, category browsing, and detailed proverb screens.
 - Update checker and sharing tools.
 
-The application is structured to be responsive, easy to navigate, and maintainable, supporting both mobile and desktop environments.
+The application is structured to be responsive, easy to navigate, and maintainable, supporting mobile environments.
 
 ---
 

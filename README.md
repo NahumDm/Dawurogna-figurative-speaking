@@ -33,13 +33,20 @@ The application is structured to be responsive, easy to navigate, and maintainab
 
 ## Demo
 
-![Onboarding Screen](doc/screenshots/onboarding-portrait.png)
-![Main Screen](doc/screenshots/category-portrait.png)
-![List Screen](doc/screenshots/list-portrait.png)
-![Proverb Detail](doc/screenshots/detail1-portrait.png)
-![Contact Screen](doc/screenshots/contact-portrait.png)
-[📹 Watch Video Demo](doc/demo/dawuro_proverb_demo.mp4)
-
+<p align="center">
+  <img src="doc/screenshots/onboarding-portrait.png" alt="Onboarding Screen" width="320" height="569" />
+  <img src="doc/screenshots/category-portrait.png" alt="Category Screen" width="320" height="569" />
+  <img src="doc/screenshots/list-portrait.png" alt="List Screen" width="320" height="569" />
+  <img src="doc/screenshots/detail1-portrait.png" alt="Proverb Detail" width="320" height="569" />
+  <img src="doc/screenshots/contact-portrait.png" alt="Contact Screen" width="320" height="569" />
+</p>
+<p align="center">
+  <video width="480" controls>
+    <source src="doc/demo/dawuro_proverb_demo.mp4" type="video/mp4" />
+    Your browser does not support HTML5 video. 
+    <a href="doc/demo/dawuro_proverb_demo.mp4">Download the demo video</a>.
+  </video>
+</p>
 ---
 
 ## Installation

@@ -15,6 +15,17 @@ class BottomNavigation extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final Size size = MediaQuery.of(context).size;
+    final double width = size.width;
+
+    // Responsive values (tweak thresholds as needed)
+    final bool compact = width < 360; // very small devices
+    final double horizontalPadding =
+        compact ? 18.0 : (width < 420 ? 30.0 : 50.0);
+    final double iconSize = compact ? 20.0 : 28.0;
+    final double textFontSize =
+        compact ? Constants.smFont - 2 : Constants.smFont;
+
     return Padding(
       padding: const EdgeInsets.all(15.0),
       child: GNav(
@@ -22,17 +33,34 @@ class BottomNavigation extends StatelessWidget {
         color: Constants.butttonColor,
         activeColor: Constants.textColor,
         gap: 5.0,
-        iconSize: 28.0,
+        iconSize: iconSize,
         tabBorderRadius: 10,
         tabActiveBorder: Border.all(color: Colors.black, width: 1),
         tabBackgroundColor: Constants.background,
-        padding: const EdgeInsets.symmetric(
-          horizontal: 50,
+        padding: EdgeInsets.symmetric(
+          horizontal: horizontalPadding,
           vertical: 5,
-        ), // navigation bar padding
+        ), // navigation bar padding (now responsive)
         tabs: [
-          GButton(icon: FontAwesomeIcons.list, text: 'ምድብ'),
-          GButton(icon: FontAwesomeIcons.circleInfo, text: 'ስለ መተግበሪያ'),
+          GButton(
+            icon: FontAwesomeIcons.list,
+            text: 'ምድብ',
+            textStyle: TextStyle(
+              fontSize: textFontSize,
+              color: Constants.textColor,
+              overflow: TextOverflow.ellipsis,
+            ),
+          ),
+          GButton(
+            icon: FontAwesomeIcons.circleInfo,
+            // Use a shorter label on very small screens to avoid overflow.
+            text: compact ? 'ስለ' : 'ስለ መተግበሪያ',
+            textStyle: TextStyle(
+              fontSize: textFontSize,
+              color: Constants.textColor,
+              overflow: TextOverflow.ellipsis,
+            ),
+          ),
         ],
         selectedIndex: selectedTabIndex,
         onTabChange: onTabChange,

@@ -33,21 +33,26 @@ The application is structured to be responsive, easy to navigate, and maintainab
 
 ## Demo
 
-![Main Screen](assets/images/demo_main_screen.png)
-![Proverb Detail](assets/images/demo_proverb_detail.png)
-> _Note: Replace the above image paths with your actual screenshots or GIF demos of the app._
+![Onboarding Screen](doc/screenshots/onboarding-portrait.png)
+![Main Screen](doc/screenshots/category-portrait.png)
+![List Screen](doc/screenshots/list-portrait.png)
+![Proverb Detail](doc/screenshots/detail1-portrait.png)
+![Contact Screen](doc/screenshots/contact-portrait.png)
+![Video Demo](doc/demo/dawuro_proverb_demo.mp4)
 
 ---
 
 ## Installation
 
 1. **Clone the repository:**
+
    ```bash
    git clone https://github.com/NahumDm/Dawurogna-figurative-speaking.git
    cd Dawurogna-figurative-speaking
    ```
 
 2. **Install dependencies:**
+
    ```bash
    flutter pub get
    ```

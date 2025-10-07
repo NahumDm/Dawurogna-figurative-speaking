@@ -38,7 +38,7 @@ The application is structured to be responsive, easy to navigate, and maintainab
 ![List Screen](doc/screenshots/list-portrait.png)
 ![Proverb Detail](doc/screenshots/detail1-portrait.png)
 ![Contact Screen](doc/screenshots/contact-portrait.png)
-![Video Demo](doc/demo/dawuro_proverb_demo.mp4)
+[📹 Watch Video Demo](doc/demo/dawuro_proverb_demo.mp4)
 
 ---
 

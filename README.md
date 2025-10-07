@@ -33,11 +33,13 @@ The application is structured to be responsive, easy to navigate, and maintainab
 
 ## Demo
 
-![Onboarding Screen](doc/screenshots/onboarding-portrait.png)
-![Main Screen](doc/screenshots/category-portrait.png)
-![List Screen](doc/screenshots/list-portrait.png)
-![Proverb Detail](doc/screenshots/detail1-portrait.png)
-![Contact Screen](doc/screenshots/contact-portrait.png)
+<p align="center">
+  <img src="doc/screenshots/onboarding-portrait.png" alt="Onboarding Screen" width="320" height="569" />
+  <img src="doc/screenshots/category-portrait.png" alt="Category Screen" width="320" height="569" />
+  <img src="doc/screenshots/list-portrait.png" alt="List Screen" width="320" height="569" />
+  <img src="doc/screenshots/detail1-portrait.png" alt="Proverb Detail" width="320" height="569" />
+  <img src="doc/screenshots/contact-portrait.png" alt="Contact Screen" width="320" height="569" />
+</p>
 [📹 Watch Video Demo](doc/demo/dawuro_proverb_demo.mp4)
 
 ---

@@ -7,7 +7,7 @@ import 'package:upgrader/upgrader.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
               durationUntilAlertAgain: const Duration(days: 2),
             ),
             navigatorKey: routeProvider.routerDelegate.navigatorKey,
-            child: child ?? Text(''),
+            child: child ?? const Text(''),
           );
         },
       ),

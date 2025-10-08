@@ -39,15 +39,10 @@ The application is structured to be responsive, easy to navigate, and maintainab
   <img src="doc/screenshots/list-portrait.png" alt="List Screen" width="320" height="569" />
   <img src="doc/screenshots/detail1-portrait.png" alt="Proverb Detail" width="320" height="569" />
   <img src="doc/screenshots/contact-portrait.png" alt="Contact Screen" width="320" height="569" />
+
+  [🎥 Watch Video Demo](https://youtube.com/shorts/40maipWQbDI?feature=share).
 </p>
-<p align="center">
-  <video width="480" controls>
-    <source src="doc/demo/dawuro_proverb_demo.mp4" type="video/mp4" />
-    Your browser does not support HTML5 video. 
-    <a href="doc/demo/dawuro_proverb_demo.mp4">Download the demo video</a>.
-  </video>
-</p>
----
+
 
 ## Installation
 
@@ -101,7 +96,7 @@ We appreciate your feedback and help in making this app better!
 
 ## License
 
-This project is open-source and available under the [MIT License](LICENSE).
+This project is open-source and available under the [Apache 2.0](LICENSE).
 
 ---
 

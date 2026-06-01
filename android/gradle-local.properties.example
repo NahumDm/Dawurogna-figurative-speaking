@@ -1,0 +1,7 @@
+# Copy to gradle-local.properties (gitignored) on your machine only.
+#
+# Windows (Android Studio JBR):
+# org.gradle.java.home=C:/Program Files/Android/Android Studio/jbr
+#
+# Or use Flutter globally:
+#   flutter config --jdk-dir "C:\Program Files\Android\Android Studio\jbr"

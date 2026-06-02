@@ -274,7 +274,7 @@ class _AlphabetListGroup extends StatelessWidget {
           final letter = letters[index];
           final count = controller.isLoading
               ? null
-              : controller.getProverbsByLetter(letter).length;
+              : controller.proverbCountForLetter(letter);
 
           return Column(
             mainAxisSize: MainAxisSize.min,

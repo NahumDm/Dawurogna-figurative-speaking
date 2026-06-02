@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:dawurogna_figurative_speaking/core/constants/app_constants.dart';
 import 'package:dawurogna_figurative_speaking/core/constants/app_spacing.dart';
+import 'package:dawurogna_figurative_speaking/core/router/app_navigation.dart';
 import 'package:dawurogna_figurative_speaking/core/theme/app_colors.dart';
 import 'package:dawurogna_figurative_speaking/core/utils/responsive.dart';
 import 'package:dawurogna_figurative_speaking/core/widgets/dawuro_app_bar_title.dart';
@@ -23,7 +24,40 @@ class ProverbDetailScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final controller = context.read<ProverbsController>();
+    final controller = context.watch<ProverbsController>();
+
+    if (controller.isLoading) {
+      return Scaffold(
+        appBar: AppBar(
+          leading: IconButton(
+            onPressed: () => context.pop(),
+            icon: const FaIcon(FontAwesomeIcons.arrowLeft, size: 20),
+          ),
+          title: const DawuroAppBarTitle(AppConstants.appTitle),
+        ),
+        body: const Center(
+          child: CircularProgressIndicator(),
+        ),
+      );
+    }
+
+    if (controller.errorMessage != null) {
+      return Scaffold(
+        appBar: AppBar(
+          leading: IconButton(
+            onPressed: () => context.pop(),
+            icon: const FaIcon(FontAwesomeIcons.arrowLeft, size: 20),
+          ),
+          title: const DawuroAppBarTitle(AppConstants.appTitle),
+        ),
+        body: EmptyStateView(
+          message: controller.errorMessage!,
+          actionLabel: AppConstants.detailRetryLabel,
+          onAction: controller.loadProverbs,
+        ),
+      );
+    }
+
     final proverb = controller.getProverbById(proverbId);
 
     if (proverb == null) {
@@ -35,7 +69,7 @@ class ProverbDetailScreen extends StatelessWidget {
           ),
           title: const DawuroAppBarTitle(AppConstants.appTitle),
         ),
-        body: const EmptyStateView(message: 'Proverb not found.'),
+        body: const EmptyStateView(message: AppConstants.detailNotFoundMessage),
       );
     }
 
@@ -59,7 +93,7 @@ class ProverbDetailScreen extends StatelessWidget {
             if (context.canPop()) {
               context.pop();
             } else {
-              context.go('/eachAlphabetList/${proverb.letter}');
+              AppNavigation.goToLetterList(context, proverb.letter);
             }
           },
           icon: const FaIcon(FontAwesomeIcons.arrowLeft, size: 20),
@@ -101,9 +135,10 @@ class ProverbDetailScreen extends StatelessWidget {
   }
 
   void _navigateTo(BuildContext context, String id, double directionX) {
-    context.pushReplacement(
-      '/tale/$id',
-      extra: Offset(directionX, 0),
+    AppNavigation.replaceProverbDetail(
+      context,
+      id,
+      slideFrom: Offset(directionX, 0),
     );
   }
 }
@@ -501,7 +536,8 @@ class _DetailNavBar extends StatelessWidget {
   final AppColors colors;
   final bool showPosition;
   final String? positionLabel;
-  final bool hasPrevious;
+  
+    final bool hasPrevious;
   final bool hasNext;
   final VoidCallback? onPrevious;
   final VoidCallback? onNext;

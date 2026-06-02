@@ -37,10 +37,10 @@ void main() {
     expect(next!.id, isNot(first!.id));
   });
 
-  test('uses dayOfYear modulo total proverbs', () {
+  test('uses calendar seed modulo total proverbs', () {
     final day = DateTime(2026, 1, 10);
-    final index = service.dayOfYear(day) - 1;
-    final expected = proverbs[index % proverbs.length];
+    final index = service.indexForDate(proverbs, day);
+    final expected = proverbs[index];
 
     expect(service.selectForDate(proverbs, day)?.id, expected.id);
   });

@@ -3,9 +3,9 @@ import 'package:dawurogna_figurative_speaking/core/constants/app_spacing.dart';
 import 'package:dawurogna_figurative_speaking/core/theme/app_colors.dart';
 import 'package:dawurogna_figurative_speaking/core/utils/responsive.dart';
 import 'package:dawurogna_figurative_speaking/core/widgets/staggered_entrance.dart';
+import 'package:dawurogna_figurative_speaking/core/utils/safe_external_launcher.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 /// Brand colors for third-party contact channels (official palette).
 abstract final class _ContactChannelColors {
@@ -16,11 +16,6 @@ abstract final class _ContactChannelColors {
 /// Contact developer bottom sheet with branded layout and entrance motion.
 class ContactBottomSheet extends StatelessWidget {
   const ContactBottomSheet({super.key});
-
-  static Future<void> _launchUrl(String url) async {
-    final uri = Uri.parse(url);
-    await launchUrl(uri, mode: LaunchMode.externalApplication);
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -105,7 +100,10 @@ class ContactBottomSheet extends StatelessWidget {
                     description: AppConstants.contactEmailDescription,
                     compact: compact,
                     onTap: () async {
-                      await _launchUrl(AppConstants.developerEmail);
+                      await SafeExternalLauncher.launchWithFeedback(
+                        context,
+                        Uri.parse(AppConstants.developerEmail),
+                      );
                       if (context.mounted) Navigator.pop(context);
                     },
                   ),
@@ -120,7 +118,10 @@ class ContactBottomSheet extends StatelessWidget {
                     description: AppConstants.contactTelegramDescription,
                     compact: compact,
                     onTap: () async {
-                      await _launchUrl(AppConstants.developerTelegram);
+                      await SafeExternalLauncher.launchWithFeedback(
+                        context,
+                        Uri.parse(AppConstants.developerTelegram),
+                      );
                       if (context.mounted) Navigator.pop(context);
                     },
                   ),

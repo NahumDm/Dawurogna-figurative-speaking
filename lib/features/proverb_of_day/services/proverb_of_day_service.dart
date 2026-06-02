@@ -1,22 +1,38 @@
 import 'package:dawurogna_figurative_speaking/data/models/proverb.dart';
 
-/// Deterministic daily proverb selection (offline, no network).
+/// Deterministic daily proverb selection using the device **local calendar date**.
+///
+/// Fully offline — no network, not affected by debug/release mode.
 class ProverbOfDayService {
   const ProverbOfDayService();
 
-  /// 1-based day index for [date] (Jan 1 = 1).
+  /// Local calendar date used for selection (defaults to now).
+  DateTime localCalendarDate([DateTime? date]) =>
+      _dateOnly((date ?? DateTime.now()).toLocal());
+
+  /// 1-based day index for [date]'s year (Jan 1 = 1), in local time.
   int dayOfYear(DateTime date) {
-    final start = DateTime(date.year, 1, 1);
-    return date.difference(start).inDays + 1;
+    final local = _dateOnly(date.toLocal());
+    final start = DateTime(local.year, 1, 1);
+    return local.difference(start).inDays + 1;
   }
 
-  /// Picks one proverb per calendar day: `dayOfYear % total`.
+  /// Stable seed per local calendar day (includes year so dates do not repeat yearly).
+  int calendarSeed(DateTime date) {
+    final local = localCalendarDate(date);
+    return local.year * 1000 + dayOfYear(local);
+  }
+
+  /// List index for [date] into [proverbs] (same order as [ProverbsRepository.allProverbs]).
+  int indexForDate(List<Proverb> proverbs, [DateTime? date]) {
+    if (proverbs.isEmpty) return -1;
+    return (calendarSeed(date ?? DateTime.now()) - 1) % proverbs.length;
+  }
+
+  /// Picks one proverb per local calendar day.
   Proverb? selectForDate(List<Proverb> proverbs, [DateTime? date]) {
     if (proverbs.isEmpty) return null;
-
-    final today = _dateOnly(date ?? DateTime.now());
-    final index = (dayOfYear(today) - 1) % proverbs.length;
-    return proverbs[index];
+    return proverbs[indexForDate(proverbs, date)];
   }
 
   DateTime _dateOnly(DateTime value) =>

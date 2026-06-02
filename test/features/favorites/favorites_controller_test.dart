@@ -53,6 +53,9 @@ class _FakeProverbsRepository implements ProverbsRepository {
   List<Proverb> getProverbsByLetter(String letter) => _items;
 
   @override
+  int proverbCountForLetter(String letter) => _items.length;
+
+  @override
   Proverb? getProverbById(String id) {
     for (final item in _items) {
       if (item.id == id) return item;

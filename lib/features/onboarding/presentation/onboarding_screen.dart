@@ -13,49 +13,83 @@ class OnboardingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final padding = Responsive.horizontalPadding(context);
+    final horizontal = Responsive.horizontalPadding(context);
+    final compact = Responsive.isCompact(context);
+    final safeBottom = MediaQuery.paddingOf(context).bottom;
+
+    // 8dp rhythm: md (16) between copy blocks, lg/xl (24–32) between sections,
+    // larger break before actions so description is not crowded against the bar.
+    final gapAfterImage = compact ? AppSpacing.lg : AppSpacing.xl;
+    final gapAfterTitle = AppSpacing.md;
+    final gapAfterDescription =
+        compact ? AppSpacing.xl * 4 + AppSpacing.lg : AppSpacing.xl * 5;
+    final gapAfterColorBar = AppSpacing.md;
+    final topInset = AppSpacing.lg;
+    final bottomInset = AppSpacing.xl + AppSpacing.lg + safeBottom;
 
     return Scaffold(
       body: SafeArea(
-        child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: padding),
-          child: Column(
-            children: [
-              Expanded(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    const _BookImage(),
-                    const SizedBox(height: AppSpacing.md),
-                    Text(
-                      AppConstants.onboardingTitle,
-                      style: theme.textTheme.headlineMedium,
-                      textAlign: TextAlign.center,
+        bottom: false,
+        child: LayoutBuilder(
+          builder: (context, constraints) {
+            final minContentHeight =
+                constraints.maxHeight - topInset - bottomInset;
+
+            return SingleChildScrollView(
+              padding: EdgeInsets.fromLTRB(
+                horizontal,
+                topInset,
+                horizontal,
+                bottomInset,
+              ),
+              child: ConstrainedBox(
+                constraints: BoxConstraints(minHeight: minContentHeight),
+                child: Align(
+                  alignment: const Alignment(0, -0.06),
+                  child: ConstrainedBox(
+                    constraints: BoxConstraints(
+                      maxWidth: Responsive.contentMaxWidth(context),
                     ),
-                    const SizedBox(height: AppSpacing.md + 4),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: AppSpacing.sm,
-                      ),
-                      child: Text(
-                        AppConstants.onboardingSubtitle,
-                        style: theme.textTheme.bodyMedium?.copyWith(
-                          height: 1.45,
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        _BookImage(compact: compact),
+                        SizedBox(height: gapAfterImage),
+                        Text(
+                          AppConstants.onboardingTitle,
+                          style: theme.textTheme.headlineMedium?.copyWith(
+                            fontWeight: FontWeight.w700,
+                            height: 1.25,
+                          ),
+                          textAlign: TextAlign.center,
                         ),
-                        textAlign: TextAlign.center,
-                      ),
+                        SizedBox(height: gapAfterTitle),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: AppSpacing.sm,
+                          ),
+                          child: Text(
+                            AppConstants.onboardingSubtitle,
+                            style: theme.textTheme.bodyLarge?.copyWith(
+                              height: 1.5,
+                              color: theme.colorScheme.onSurfaceVariant,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                        SizedBox(height: gapAfterDescription),
+                        const ColorIndicator(),
+                        SizedBox(height: gapAfterColorBar),
+                        ContinueButton(
+                          onPressed: () => context.goNamed(RouteNames.category),
+                        ),
+                      ],
                     ),
-                  ],
+                  ),
                 ),
               ),
-              const ColorIndicator(),
-              const SizedBox(height: AppSpacing.md),
-              ContinueButton(
-                onPressed: () => context.goNamed(RouteNames.category),
-              ),
-              const SizedBox(height: AppSpacing.lg),
-            ],
-          ),
+            );
+          },
         ),
       ),
     );
@@ -63,17 +97,25 @@ class OnboardingScreen extends StatelessWidget {
 }
 
 class _BookImage extends StatelessWidget {
-  const _BookImage();
+  const _BookImage({required this.compact});
+
+  final bool compact;
 
   @override
   Widget build(BuildContext context) {
+    final size = compact ? 88.0 : 104.0;
+
     return Card(
+      elevation: 0,
+      color: Theme.of(context).colorScheme.surfaceContainerHighest,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
       child: Padding(
-        padding: const EdgeInsets.all(8),
+        padding: const EdgeInsets.all(AppSpacing.md),
         child: Image.asset(
           AppConstants.bookIconAsset,
-          height: 80,
-          width: 80,
+          height: size,
+          width: size,
+          fit: BoxFit.contain,
           semanticLabel: 'Book icon',
         ),
       ),

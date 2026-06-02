@@ -1,8 +1,8 @@
 import 'package:dawurogna_figurative_speaking/core/constants/app_constants.dart';
 import 'package:dawurogna_figurative_speaking/core/widgets/contact_bottom_sheet.dart';
+import 'package:dawurogna_figurative_speaking/core/utils/safe_external_launcher.dart';
 import 'package:flutter/material.dart';
 import 'package:share_plus/share_plus.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'package:upgrader/upgrader.dart';
 
 /// Shared actions for update, share, and contact flows.
@@ -30,10 +30,10 @@ abstract final class SettingsActions {
               onPressed: () async {
                 final url = upgrader.currentAppStoreListingURL;
                 if (url != null) {
-                  final uri = Uri.parse(url);
-                  if (await canLaunchUrl(uri)) {
-                    await launchUrl(uri, mode: LaunchMode.externalApplication);
-                  }
+                  await SafeExternalLauncher.launchWithFeedback(
+                    dialogContext,
+                    Uri.parse(url),
+                  );
                 }
               },
               child: const Text(AppConstants.updateNowLabel),

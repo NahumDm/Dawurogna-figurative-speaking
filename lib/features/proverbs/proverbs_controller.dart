@@ -21,5 +21,8 @@ class ProverbsController extends ChangeNotifier {
   List<Proverb> getProverbsByLetter(String letter) =>
       _repository.getProverbsByLetter(letter);
 
+  int proverbCountForLetter(String letter) =>
+      _repository.proverbCountForLetter(letter);
+
   Proverb? getProverbById(String id) => _repository.getProverbById(id);
 }

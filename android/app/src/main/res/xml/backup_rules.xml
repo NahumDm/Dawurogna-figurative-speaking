@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Disables automatic backup of app data (favorites, preferences stay on-device only). -->
+<full-backup-content />

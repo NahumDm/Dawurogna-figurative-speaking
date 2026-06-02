@@ -11,9 +11,14 @@ import 'package:provider/provider.dart';
 
 /// Bottom sheet that reveals today's proverb without cluttering the category list.
 class ProverbOfDaySheet extends StatelessWidget {
-  const ProverbOfDaySheet({super.key, required this.proverb});
+  const ProverbOfDaySheet({
+    super.key,
+    required this.proverb,
+    required this.calendarDate,
+  });
 
   final Proverb proverb;
+  final DateTime calendarDate;
 
   static Future<void> show(BuildContext context) {
     final controller = context.read<ProverbsController>();
@@ -30,9 +35,9 @@ class ProverbOfDaySheet extends StatelessWidget {
       );
     }
 
-    final proverb = const ProverbOfDayService().selectForDate(
-      controller.allProverbs,
-    );
+    final podService = const ProverbOfDayService();
+    final localToday = podService.localCalendarDate();
+    final proverb = podService.selectForDate(controller.allProverbs, localToday);
     if (proverb == null) return Future.value();
 
     return showModalBottomSheet<void>(
@@ -44,7 +49,10 @@ class ProverbOfDaySheet extends StatelessWidget {
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
       ),
-      builder: (sheetContext) => ProverbOfDaySheet(proverb: proverb),
+      builder: (sheetContext) => ProverbOfDaySheet(
+        proverb: proverb,
+        calendarDate: localToday,
+      ),
     );
   }
 
@@ -92,7 +100,8 @@ class ProverbOfDaySheet extends StatelessWidget {
               ),
               const SizedBox(height: AppSpacing.xs),
               Text(
-                AppConstants.proverbOfDaySheetSubtitle,
+                '${AppConstants.proverbOfDaySheetSubtitle} · '
+                '${_formatCalendarDate(calendarDate)}',
                 style: theme.textTheme.bodySmall?.copyWith(
                   color: scheme.onSurfaceVariant,
                   height: 1.4,
@@ -145,6 +154,24 @@ class ProverbOfDaySheet extends StatelessWidget {
       ),
     );
   }
+}
+
+String _formatCalendarDate(DateTime date) {
+  const months = [
+    'Jan',
+    'Feb',
+    'Mar',
+    'Apr',
+    'May',
+    'Jun',
+    'Jul',
+    'Aug',
+    'Sep',
+    'Oct',
+    'Nov',
+    'Dec',
+  ];
+  return '${months[date.month - 1]} ${date.day}, ${date.year}';
 }
 
 class _BrandStripe extends StatelessWidget {

@@ -78,6 +78,11 @@ abstract final class AppConstants {
       '$current of $total';
   static const String detailPreviousLabel = 'Previous proverb';
   static const String detailNextLabel = 'Next proverb';
+  static const String detailLoadingMessage = 'Loading proverb…';
+  static const String detailNotFoundMessage = 'Proverb not found.';
+  static const String detailLoadErrorMessage =
+      'Unable to load proverbs. Please try again.';
+  static const String detailRetryLabel = 'Retry';
 
   static const String categoryBrowseTitle = 'Browse by letter';
   static const String categoryBrowseSubtitle =

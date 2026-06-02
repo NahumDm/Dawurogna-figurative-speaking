@@ -15,6 +15,8 @@ abstract class ProverbsRepository {
 
   List<Proverb> getProverbsByLetter(String letter);
 
+  int proverbCountForLetter(String letter);
+
   Proverb? getProverbById(String id);
 
   // Future-ready hooks (not implemented yet):
@@ -29,6 +31,9 @@ class ProverbsRepositoryImpl implements ProverbsRepository {
   final ProverbsLocalDataSource _localDataSource;
 
   List<Proverb> _proverbs = [];
+  Map<String, Proverb> _byId = {};
+  Map<String, List<Proverb>> _byLetter = {};
+  Map<String, int> _countByLetter = {};
   bool _isLoading = false;
   String? _errorMessage;
 
@@ -52,25 +57,49 @@ class ProverbsRepositoryImpl implements ProverbsRepository {
       final loaded = await _localDataSource.loadProverbs();
       loaded.sort((a, b) => a.sortKey.compareTo(b.sortKey));
       _proverbs = loaded;
+      _buildIndexes();
     } catch (_) {
       _errorMessage = 'Unable to load proverbs. Please restart the app.';
       _proverbs = [];
+      _clearIndexes();
     } finally {
       _isLoading = false;
     }
   }
 
-  @override
-  List<Proverb> getProverbsByLetter(String letter) {
-    final normalized = AlphabetNormalizer.normalize(letter);
-    return _proverbs.where((p) => p.letter == normalized).toList();
+  void _buildIndexes() {
+    _byId = {for (final proverb in _proverbs) proverb.id: proverb};
+    _byLetter = {};
+    _countByLetter = {};
+    for (final proverb in _proverbs) {
+      final list = _byLetter.putIfAbsent(proverb.letter, () => []);
+      list.add(proverb);
+    }
+    for (final entry in _byLetter.entries) {
+      _countByLetter[entry.key] = entry.value.length;
+    }
+  }
+
+  void _clearIndexes() {
+    _byId = {};
+    _byLetter = {};
+    _countByLetter = {};
   }
 
   @override
-  Proverb? getProverbById(String id) {
-    for (final proverb in _proverbs) {
-      if (proverb.id == id) return proverb;
-    }
-    return null;
+  List<Proverb> getProverbsByLetter(String letter) {
+    final normalized = AlphabetNormalizer.normalize(letter);
+    final list = _byLetter[normalized];
+    if (list != null) return List.unmodifiable(list);
+    return const [];
   }
+
+  @override
+  int proverbCountForLetter(String letter) {
+    final normalized = AlphabetNormalizer.normalize(letter);
+    return _countByLetter[normalized] ?? 0;
+  }
+
+  @override
+  Proverb? getProverbById(String id) => _byId[id];
 }

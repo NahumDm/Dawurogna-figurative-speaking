@@ -19,9 +19,15 @@ class DawuroAppBarTitle extends StatelessWidget {
         Theme.of(context).appBarTheme.titleTextStyle?.color ??
         Theme.of(context).colorScheme.onSurface;
 
-    return Text(
-      text,
-      style: AppTheme.appBarTitleStyle(color: resolvedColor),
+    return FittedBox(
+      fit: BoxFit.scaleDown,
+      alignment: Alignment.centerLeft,
+      child: Text(
+        text,
+        style: AppTheme.appBarTitleStyle(color: resolvedColor),
+        maxLines: 1,
+        overflow: TextOverflow.ellipsis,
+      ),
     );
   }
 }

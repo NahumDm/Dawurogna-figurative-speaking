@@ -8,15 +8,17 @@ class ContinueButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final width = MediaQuery.sizeOf(context).width;
-    return SizedBox(
-      width: width * 0.8,
-      child: Semantics(
-        button: true,
-        label: AppConstants.continueLabel,
-        child: ElevatedButton(
-          onPressed: onPressed,
-          child: const Text(AppConstants.continueLabel),
+    return ConstrainedBox(
+      constraints: const BoxConstraints(maxWidth: 360),
+      child: SizedBox(
+        width: double.infinity,
+        child: Semantics(
+          button: true,
+          label: AppConstants.continueLabel,
+          child: ElevatedButton(
+            onPressed: onPressed,
+            child: const Text(AppConstants.continueLabel),
+          ),
         ),
       ),
     );

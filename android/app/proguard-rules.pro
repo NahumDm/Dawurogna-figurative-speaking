@@ -1,10 +1,11 @@
-# Flutter
--keep class io.flutter.app.** { *; }
--keep class io.flutter.plugin.** { *; }
--keep class io.flutter.util.** { *; }
--keep class io.flutter.view.** { *; }
--keep class io.flutter.** { *; }
--keep class io.flutter.plugins.** { *; }
+# Google Play Core & Deferred Components
+-keep class com.google.android.play.core.** { *; }
+-keep interface com.google.android.play.core.** { *; }
+-dontwarn com.google.android.play.core.**
 
-# Hive (local favorites box)
--keep class * extends hive.HiveObject { *; }
+# AndroidX & Flutter Engine dynamic features
+-keep class io.flutter.embedding.engine.deferred.** { *; }
+-keep class io.flutter.plugin.editing.** { *; }
+
+# Prevent R8 from breaking GSON / Serialized Hive models if using Json
+-keepattributes *Annotation*,Signature,InnerClasses,EnclosingMethod

@@ -2,6 +2,7 @@ import 'package:dawurogna_figurative_speaking/core/constants/app_spacing.dart';
 import 'package:dawurogna_figurative_speaking/core/theme/app_colors.dart';
 import 'package:dawurogna_figurative_speaking/data/models/proverb.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class FavoriteProverbCard extends StatelessWidget {
   const FavoriteProverbCard({
@@ -50,7 +51,7 @@ class FavoriteProverbCard extends StatelessWidget {
                         Text(
                           proverb.dawuro,
                           style: theme.textTheme.titleMedium?.copyWith(
-                            fontFamily: 'Roboto',
+                            fontFamily: GoogleFonts.roboto().fontFamily,
                             fontWeight: FontWeight.w600,
                             height: 1.45,
                           ),

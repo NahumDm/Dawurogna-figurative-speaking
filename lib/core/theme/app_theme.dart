@@ -1,16 +1,13 @@
 import 'package:dawurogna_figurative_speaking/core/theme/app_colors.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 abstract final class AppTheme {
-  static const String _dashFont = 'Dash';
-  static const String _robotoFont = 'Roboto';
-  static const String _openSansFont = 'OpenSans';
   static const double appBarTitleFontSize = 18;
 
   /// Dash app bar titles — regular weight (not bold).
   static TextStyle appBarTitleStyle({required Color color}) {
-    return TextStyle(
-      fontFamily: _dashFont,
+    return GoogleFonts.poppins(
       fontSize: appBarTitleFontSize,
       fontWeight: FontWeight.w400,
       color: color,
@@ -38,7 +35,7 @@ abstract final class AppTheme {
       brightness: brightness,
       colorScheme: colorScheme,
       extensions: [appColors],
-      fontFamily: _openSansFont,
+      fontFamily: GoogleFonts.openSans().fontFamily,
     );
 
     return base.copyWith(
@@ -60,8 +57,7 @@ abstract final class AppTheme {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(10),
           ),
-          textStyle: const TextStyle(
-            fontFamily: _robotoFont,
+          textStyle: GoogleFonts.roboto(
             fontWeight: FontWeight.bold,
             fontSize: 18,
           ),
@@ -96,32 +92,32 @@ abstract final class AppTheme {
   static TextTheme _textTheme(TextTheme base, ColorScheme scheme) {
     return base.copyWith(
       headlineMedium: base.headlineMedium?.copyWith(
-        fontFamily: _dashFont,
+        fontFamily: GoogleFonts.poppins().fontFamily,
         fontWeight: FontWeight.bold,
         color: scheme.onSurface,
       ),
       titleLarge: base.titleLarge?.copyWith(
-        fontFamily: _robotoFont,
+        fontFamily: GoogleFonts.roboto().fontFamily,
         fontWeight: FontWeight.w700,
         color: scheme.onSurface,
       ),
       titleMedium: base.titleMedium?.copyWith(
-        fontFamily: _openSansFont,
+        fontFamily: GoogleFonts.openSans().fontFamily,
         fontWeight: FontWeight.w600,
         color: scheme.onSurface,
       ),
       bodyLarge: base.bodyLarge?.copyWith(
-        fontFamily: _openSansFont,
+        fontFamily: GoogleFonts.openSans().fontFamily,
         height: 1.55,
         color: scheme.onSurface,
       ),
       bodyMedium: base.bodyMedium?.copyWith(
-        fontFamily: _openSansFont,
+        fontFamily: GoogleFonts.openSans().fontFamily,
         height: 1.5,
         color: scheme.onSurfaceVariant,
       ),
       labelLarge: base.labelLarge?.copyWith(
-        fontFamily: _openSansFont,
+        fontFamily: GoogleFonts.openSans().fontFamily,
         fontWeight: FontWeight.w600,
         letterSpacing: 0.4,
         color: scheme.onSurfaceVariant,

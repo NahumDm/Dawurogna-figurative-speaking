@@ -1,5 +1,5 @@
 name: dawurogna_figurative_speaking
-description: "A new Flutter project."
+description: "A Flutter app for exploring Dawuro proverbs and cultural stories."
 
 publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
@@ -12,16 +12,17 @@ dependencies:
   flutter:
     sdk: flutter
 
-  google_nav_bar: ^5.0.7
   go_router: ^17.0.1
   provider: ^6.1.5
   font_awesome_flutter: ^11.0.0
-  share_plus: ^12.0.1
+  share_plus: ^13.2.1
+  package_info_plus: ^10.2.1
   url_launcher: ^6.3.2
-  upgrader: ^12.4.0
   shared_preferences: ^2.5.3
   hive: ^2.2.3
   hive_flutter: ^1.1.0
+  google_fonts: ^8.2.0
+  in_app_update: ^4.0.0
 
 dev_dependencies:
   flutter_test:
@@ -29,31 +30,18 @@ dev_dependencies:
 
   flutter_lints: ^6.0.0
   flutter_launcher_icons: ^0.14.4
-
 flutter_launcher_icons:
   android: "launcher_icon"
-  ios: true
-  image_path: "assets/icon/icon.png"
+  ios: false
+  image_path: "assets/icon/icon.webp"
   adaptive_icon_background: "#ffffff"
-  min_sdk_android: 16
+  adaptive_icon_foreground: "assets/icon/icon.webp"
+  min_sdk_android: 24
 
 flutter:
   uses-material-design: true
 
   assets:
-    - assets/images/book_icon.png
-    - assets/images/dawuro_gihibli.png
+    - assets/images/book_icon.webp
+    - assets/images/dawuro_gihibli.webp
     - assets/data/dawurogna_proverbs.json
-
-  fonts:
-    - family: Dash
-      fonts:
-        - asset: assets/fonts/Dash-Horizon-Demo.otf
-
-    - family: Roboto
-      fonts:
-        - asset: assets/fonts/Roboto-VariableFont_wdth.ttf
-
-    - family: OpenSans
-      fonts:
-        - asset: assets/fonts/OpenSans-VariableFont_wdth.ttf

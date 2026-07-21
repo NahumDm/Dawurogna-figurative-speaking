@@ -13,6 +13,7 @@ import 'package:dawurogna_figurative_speaking/features/favorites/widgets/favorit
 import 'package:dawurogna_figurative_speaking/features/proverbs/proverbs_controller.dart';
 import 'package:dawurogna_figurative_speaking/features/sharing/services/proverb_share_service.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
@@ -346,7 +347,7 @@ class _DetailContentCard extends StatelessWidget {
                         accentColor: colors.brandRed,
                         body: proverb.dawuro,
                         bodyStyle: theme.textTheme.headlineSmall?.copyWith(
-                          fontFamily: 'Roboto',
+                          fontFamily: GoogleFonts.roboto().fontFamily,
                           fontWeight: FontWeight.w800,
                           color: Colors.white,
                           height: 1.5,
@@ -446,8 +447,8 @@ class _LetterChip extends StatelessWidget {
       ),
       child: Text(
         letter,
-        style: const TextStyle(
-          fontFamily: 'Roboto',
+        style: TextStyle(
+          fontFamily: GoogleFonts.roboto().fontFamily,
           fontSize: 18,
           fontWeight: FontWeight.w700,
           color: Colors.white,

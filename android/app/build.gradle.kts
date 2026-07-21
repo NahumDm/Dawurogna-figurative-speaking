@@ -15,9 +15,9 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
-    namespace = "com.nahom.dawurogna_figurative_speaking"
+    namespace = "com.narke.dawuro_proverb"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = "27.0.12077973"
+    ndkVersion = "28.2.13676358"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
@@ -25,11 +25,17 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.nahom.dawurogna_figurative_speaking"
-        minSdk = flutter.minSdkVersion
-        targetSdk = flutter.targetSdkVersion
+        applicationId = "com.narke.dawuro_proverb"
+        minSdk = 24
+        targetSdk = 35
         versionCode = flutter.versionCode
         versionName = flutter.versionName
+    }
+
+    packaging {
+        jniLibs {
+            useLegacyPackaging = false
+        }
     }
 
     signingConfigs {

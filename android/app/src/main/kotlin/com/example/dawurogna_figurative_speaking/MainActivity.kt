@@ -1,4 +1,4 @@
-package com.nahom.dawurogna_figurative_speaking
+package com.narke.dawuro_proverb
 
 import io.flutter.embedding.android.FlutterActivity
 

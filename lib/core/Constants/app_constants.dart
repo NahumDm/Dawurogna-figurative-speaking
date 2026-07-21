@@ -94,11 +94,11 @@ abstract final class AppConstants {
       count == 1 ? '1 letter' : '$count letters';
 
   static const String proverbsAssetPath = 'assets/data/dawurogna_proverbs.json';
-  static const String bookIconAsset = 'assets/images/book_icon.png';
-  static const String culturalImageAsset = 'assets/images/dawuro_gihibli.png';
+  static const String bookIconAsset = 'assets/images/book_icon.webp';
+  static const String culturalImageAsset = 'assets/images/dawuro_gihibli.webp';
 
   static const String playStoreUrl =
-      'https://play.google.com/store/apps/details?id=com.nahom.dawurogna_figurative_speaking';
+      'https://play.google.com/store/apps/details?id=com.narke.dawuro_proverb';
 
   static const String developerEmail =
       'mailto:nahomdesta.dev@gmail.com?subject=Feedback for Dawurogna App';

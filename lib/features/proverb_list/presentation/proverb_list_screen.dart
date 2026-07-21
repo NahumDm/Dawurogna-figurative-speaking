@@ -10,6 +10,7 @@ import 'package:dawurogna_figurative_speaking/core/widgets/loading_view.dart';
 import 'package:dawurogna_figurative_speaking/data/models/proverb.dart';
 import 'package:dawurogna_figurative_speaking/features/proverbs/proverbs_controller.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
@@ -165,7 +166,7 @@ class _LetterHeader extends StatelessWidget {
                       Text(
                         AppConstants.proverbListAppBarTitle(letter),
                         style: theme.textTheme.titleLarge?.copyWith(
-                          fontFamily: 'Roboto',
+                          fontFamily: GoogleFonts.roboto().fontFamily,
                           fontWeight: FontWeight.w700,
                         ),
                       ),
@@ -175,6 +176,8 @@ class _LetterHeader extends StatelessWidget {
                         style: theme.textTheme.bodyMedium?.copyWith(
                           color: scheme.onSurfaceVariant,
                         ),
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
                       ),
                       const SizedBox(height: AppSpacing.xs),
                       Text(
@@ -183,6 +186,8 @@ class _LetterHeader extends StatelessWidget {
                           color: colors.brandRed,
                           fontSize: 12,
                         ),
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
                       ),
                     ],
                   ),
@@ -222,8 +227,8 @@ class _LetterBadge extends StatelessWidget {
       alignment: Alignment.center,
       child: Text(
         letter,
-        style: const TextStyle(
-          fontFamily: 'Roboto',
+        style: TextStyle(
+          fontFamily: GoogleFonts.roboto().fontFamily,
           fontSize: 28,
           fontWeight: FontWeight.w700,
           color: Colors.white,
@@ -298,7 +303,7 @@ class _ProverbCard extends StatelessWidget {
                     child: Text(
                       proverb.dawuro,
                       style: theme.textTheme.bodyLarge?.copyWith(
-                        fontFamily: 'Roboto',
+                        fontFamily: GoogleFonts.roboto().fontFamily,
                         fontWeight: FontWeight.w500,
                         height: 1.5,
                         color: scheme.onSurface,

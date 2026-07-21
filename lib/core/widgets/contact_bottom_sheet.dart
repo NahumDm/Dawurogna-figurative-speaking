@@ -6,6 +6,7 @@ import 'package:dawurogna_figurative_speaking/core/widgets/staggered_entrance.da
 import 'package:dawurogna_figurative_speaking/core/utils/safe_external_launcher.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 /// Brand colors for third-party contact channels (official palette).
 abstract final class _ContactChannelColors {
@@ -70,7 +71,7 @@ class ContactBottomSheet extends StatelessWidget {
                   child: Text(
                     AppConstants.contactSheetTitle,
                     style: theme.textTheme.titleLarge?.copyWith(
-                      fontFamily: 'Roboto',
+                      fontFamily: GoogleFonts.roboto().fontFamily,
                       fontWeight: FontWeight.w700,
                       fontSize: compact ? 18 : null,
                     ),

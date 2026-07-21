@@ -9,6 +9,7 @@ import 'package:dawurogna_figurative_speaking/core/widgets/staggered_entrance.da
 import 'package:dawurogna_figurative_speaking/features/proverb_of_day/widgets/proverb_of_day_action.dart';
 import 'package:dawurogna_figurative_speaking/features/proverbs/proverbs_controller.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 
@@ -129,7 +130,7 @@ class _CategoryHeader extends StatelessWidget {
                       Text(
                         AppConstants.categoryBrowseTitle,
                         style: theme.textTheme.titleLarge?.copyWith(
-                          fontFamily: 'Roboto',
+                          fontFamily: GoogleFonts.roboto().fontFamily,
                           fontWeight: FontWeight.w700,
                         ),
                       ),
@@ -140,6 +141,8 @@ class _CategoryHeader extends StatelessWidget {
                           color: scheme.onSurfaceVariant,
                           height: 1.45,
                         ),
+                        maxLines: 3,
+                        overflow: TextOverflow.ellipsis,
                       ),
                       const SizedBox(height: AppSpacing.sm),
                       Text(
@@ -232,7 +235,7 @@ class _QuickLetterRail extends StatelessWidget {
                     child: Text(
                       letter,
                       style: TextStyle(
-                        fontFamily: 'Roboto',
+                        fontFamily: GoogleFonts.roboto().fontFamily,
                         fontWeight: FontWeight.w600,
                         fontSize: 15,
                         color: colors.brandRed,
@@ -341,8 +344,8 @@ class _AlphabetListRow extends StatelessWidget {
                 alignment: Alignment.center,
                 child: Text(
                   letter,
-                  style: const TextStyle(
-                    fontFamily: 'Roboto',
+                  style: TextStyle(
+                    fontFamily: GoogleFonts.roboto().fontFamily,
                     fontSize: 18,
                     fontWeight: FontWeight.w700,
                     color: Colors.white,

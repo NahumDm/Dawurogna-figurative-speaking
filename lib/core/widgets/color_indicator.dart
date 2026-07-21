@@ -7,30 +7,30 @@ class ColorIndicator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final colors = context.appColors;
-    final width = MediaQuery.sizeOf(context).width * 0.8;
-    final segmentWidth = width / 3;
 
-    return SizedBox(
-      width: width,
-      child: Row(
-        children: [
-          _Bar(color: colors.brandRed, width: segmentWidth),
-          _Bar(color: Theme.of(context).colorScheme.onSurface, width: segmentWidth),
-          _Bar(color: colors.brandGold, width: segmentWidth),
-        ],
+    return ConstrainedBox(
+      constraints: const BoxConstraints(maxWidth: 480),
+      child: SizedBox(
+        width: double.infinity,
+        child: Row(
+          children: [
+            Expanded(child: _Bar(color: colors.brandRed)),
+            Expanded(child: _Bar(color: Theme.of(context).colorScheme.onSurface)),
+            Expanded(child: _Bar(color: colors.brandGold)),
+          ],
+        ),
       ),
     );
   }
 }
 
 class _Bar extends StatelessWidget {
-  const _Bar({required this.color, required this.width});
+  const _Bar({required this.color});
 
   final Color color;
-  final double width;
 
   @override
   Widget build(BuildContext context) {
-    return Container(height: 8, width: width, color: color);
+    return Container(height: 8, color: color);
   }
 }

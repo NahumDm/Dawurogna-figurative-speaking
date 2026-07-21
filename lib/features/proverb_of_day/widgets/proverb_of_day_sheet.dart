@@ -6,6 +6,7 @@ import 'package:dawurogna_figurative_speaking/data/models/proverb.dart';
 import 'package:dawurogna_figurative_speaking/features/proverb_of_day/services/proverb_of_day_service.dart';
 import 'package:dawurogna_figurative_speaking/features/proverbs/proverbs_controller.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 
@@ -111,7 +112,7 @@ class ProverbOfDaySheet extends StatelessWidget {
               Text(
                 proverb.dawuro,
                 style: theme.textTheme.titleLarge?.copyWith(
-                  fontFamily: 'Roboto',
+                  fontFamily: GoogleFonts.roboto().fontFamily,
                   fontWeight: FontWeight.w700,
                   height: 1.5,
                 ),

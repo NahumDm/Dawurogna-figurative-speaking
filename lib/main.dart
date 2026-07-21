@@ -6,10 +6,12 @@ import 'package:dawurogna_figurative_speaking/data/repositories/proverbs_reposit
 import 'package:dawurogna_figurative_speaking/features/favorites/data/favorite_repository.dart';
 import 'package:dawurogna_figurative_speaking/features/favorites/favorites_controller.dart';
 import 'package:dawurogna_figurative_speaking/features/proverbs/proverbs_controller.dart';
+import 'package:dawurogna_figurative_speaking/features/settings/services/in_app_update_service.dart';
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:provider/provider.dart';
-import 'package:upgrader/upgrader.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -43,6 +45,7 @@ class _AppBootstrapState extends State<AppBootstrap> {
     await favoriteRepository.init();
 
     if (mounted) {
+      unawaited(InAppUpdateService.resumeInterruptedUpdate());
       setState(() {
         _themeController = themeController;
         _favoriteRepository = favoriteRepository;
@@ -133,13 +136,7 @@ class _DawurognaAppState extends State<DawurognaApp> {
                   value: _favoritesController,
                 ),
               ],
-              child: UpgradeAlert(
-                upgrader: Upgrader(
-                  durationUntilAlertAgain: const Duration(days: 2),
-                ),
-                navigatorKey: appRouter.routerDelegate.navigatorKey,
-                child: child ?? const SizedBox.shrink(),
-              ),
+              child: child ?? const SizedBox.shrink(),
             );
           },
         );
@@ -147,4 +144,4 @@ class _DawurognaAppState extends State<DawurognaApp> {
     );
   }
 }
-
+

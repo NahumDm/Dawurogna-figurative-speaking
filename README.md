@@ -34,11 +34,11 @@ The application is structured to be responsive, easy to navigate, and maintainab
 ## Demo
 
 <p align="center">
-  <img src="doc/screenshots/onboarding-portrait.png" alt="Onboarding Screen" width="320" height="569" />
-  <img src="doc/screenshots/category-portrait.png" alt="Category Screen" width="320" height="569" />
-  <img src="doc/screenshots/list-portrait.png" alt="List Screen" width="320" height="569" />
-  <img src="doc/screenshots/detail1-portrait.png" alt="Proverb Detail" width="320" height="569" />
-  <img src="doc/screenshots/contact-portrait.png" alt="Contact Screen" width="320" height="569" />
+  <img src="assets/screenshots/browse.jpg" alt="Browse Screen" width="320" height="569" />
+  <img src="assets/screenshots/daily proverb.jpg" alt="Daily proverb Screen" width="320" height="569" />
+  <img src="assets/screenshots/details.jpg" alt="Details Screen" width="320" height="569" />
+  <img src="assets/screenshots/favorites.jpg" alt="Favorites Screen" width="320" height="569" />
+  <img src="assets/screenshots/lists.jpg" alt="Lists Screen" width="320" height="569" />
 
   [🎥 Watch Video Demo](https://youtube.com/shorts/40maipWQbDI?feature=share).
 </p>
@@ -101,3 +101,4 @@ This project is open-source and available under the [Apache 2.0](LICENSE).
 ---
 
 _Thank you for supporting the preservation of Dawuro culture!_
+

@@ -46,6 +46,7 @@ class ProverbOfDayAction extends StatelessWidget {
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.min,
                     children: [
                       Text(
                         AppConstants.proverbOfDayActionLabel,
@@ -53,6 +54,8 @@ class ProverbOfDayAction extends StatelessWidget {
                           fontWeight: FontWeight.w700,
                           color: scheme.onSurface,
                         ),
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
                       ),
                       const SizedBox(height: 2),
                       Text(
@@ -61,6 +64,8 @@ class ProverbOfDayAction extends StatelessWidget {
                           color: scheme.onSurfaceVariant,
                           height: 1.3,
                         ),
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
                       ),
                     ],
                   ),

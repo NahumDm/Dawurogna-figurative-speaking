@@ -1,3 +1,8 @@
+---
+layout: default
+title: Privacy Policy
+---
+
 # Privacy Policy for ዳውሮኛ ተረትና ምሳሌ- Dawuro Proverbs
 Effective Date: August 1, 2026
 Last Updated: July 31, 2026

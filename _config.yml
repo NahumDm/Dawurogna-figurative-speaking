@@ -1,5 +1,7 @@
-title: Dawurogna-figurative-speaking
-description: A simple Jekyll site
-remote_theme: pages-themes/minima@v0.2.0
+remote_theme: pmarsceill/just-the-docs
 plugins:
-  - jekyll-remote-theme   
+  - jekyll-remote-theme
+
+# Optional: Site metadata
+title: Dawurogna Figurative Speaking
+description: Documentation and Privacy Policy   

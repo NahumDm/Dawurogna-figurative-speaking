@@ -1,7 +1,4 @@
----
-layout: default
-title: Privacy Policy
----
+<div style="max-width: 800px; margin: 40px auto; padding: 30px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #24292e; background-color: #ffffff; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
 
 # Privacy Policy for ዳውሮኛ ተረትና ምሳሌ- Dawuro Proverbs
 Effective Date: August 1, 2026
@@ -50,3 +47,5 @@ If you have any questions or suggestions about this Privacy Policy, please conta
 Effective Date: August 1, 2026
 
 Last Updated: July 31, 2026
+
+</dic>

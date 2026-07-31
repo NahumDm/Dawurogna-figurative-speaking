@@ -1,7 +1,8 @@
-remote_theme: pmarsceill/just-the-docs
-plugins:
-  - jekyll-remote-theme
+# remote_theme: pmarsceill/just-the-docs
+# plugins:
+#   - jekyll-remote-theme
 
-# Optional: Site metadata
-title: Dawurogna Figurative Speaking
-description: Documentation and Privacy Policy   
+# # Optional: Site metadata
+# title: Dawurogna Figurative Speaking
+# description: Documentation and Privacy Policy   
+jekyll-theme-primer

@@ -1,6 +1,4 @@
-import 'package:dawurogna_figurative_speaking/core/constants/app_constants.dart';
 import 'package:dawurogna_figurative_speaking/core/widgets/contact_bottom_sheet.dart';
-import 'package:dawurogna_figurative_speaking/core/utils/safe_external_launcher.dart';
 import 'package:dawurogna_figurative_speaking/features/settings/services/in_app_update_service.dart';
 import 'package:flutter/material.dart';
 import 'package:package_info_plus/package_info_plus.dart';

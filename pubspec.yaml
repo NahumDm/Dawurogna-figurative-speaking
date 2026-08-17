@@ -3,7 +3,7 @@ description: "A Flutter app for exploring Dawuro proverbs and cultural stories."
 
 publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
-version: 1.0.2+3
+version: 1.0.2+4
 
 environment:
   sdk: ^3.7.2

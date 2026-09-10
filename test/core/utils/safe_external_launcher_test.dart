@@ -14,13 +14,10 @@ void main() {
     });
 
     test('rejects mailto without address', () {
-      expect(
-        SafeExternalLauncher.isAllowed(Uri.parse('mailto:')),
-        isFalse,
-      );
+      expect(SafeExternalLauncher.isAllowed(Uri.parse('mailto:')), isFalse);
     });
 
-    test('allows Play Store and Telegram hosts', () {
+    test('allows Play Store, GitHub, and Telegram hosts', () {
       expect(
         SafeExternalLauncher.isAllowed(
           Uri.parse(
@@ -31,6 +28,12 @@ void main() {
       );
       expect(
         SafeExternalLauncher.isAllowed(Uri.parse('https://t.me/example')),
+        isTrue,
+      );
+      expect(
+        SafeExternalLauncher.isAllowed(
+          Uri.parse('https://github.com/example/project'),
+        ),
         isTrue,
       );
     });
@@ -57,6 +60,12 @@ void main() {
       expect(
         SafeExternalLauncher.isAllowed(
           Uri.parse(AppConstants.developerTelegram),
+        ),
+        isTrue,
+      );
+      expect(
+        SafeExternalLauncher.isAllowed(
+          Uri.parse(AppConstants.privacyPolicyUrl),
         ),
         isTrue,
       );

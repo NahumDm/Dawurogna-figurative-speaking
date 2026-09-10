@@ -7,10 +7,18 @@ import 'package:dawurogna_figurative_speaking/core/widgets/dawuro_app_bar_title.
 import 'package:dawurogna_figurative_speaking/core/widgets/staggered_entrance.dart';
 import 'package:dawurogna_figurative_speaking/features/settings/services/settings_actions.dart';
 import 'package:flutter/material.dart';
+import 'package:package_info_plus/package_info_plus.dart';
 import 'package:provider/provider.dart';
 
-class SettingsScreen extends StatelessWidget {
+class SettingsScreen extends StatefulWidget {
   const SettingsScreen({super.key});
+
+  @override
+  State<SettingsScreen> createState() => _SettingsScreenState();
+}
+
+class _SettingsScreenState extends State<SettingsScreen> {
+  late final Future<PackageInfo> _packageInfo = PackageInfo.fromPlatform();
 
   @override
   Widget build(BuildContext context) {
@@ -65,17 +73,35 @@ class SettingsScreen extends StatelessWidget {
                         iconTint: context.appColors.brandRed,
                         title: AppConstants.contactDeveloperLabel,
                         subtitle: AppConstants.settingsContactSubtitle,
-                        onTap: () =>
-                            SettingsActions.showContactDeveloper(context),
+                        onTap:
+                            () => SettingsActions.showContactDeveloper(context),
                         animationIndex: 4,
+                      ),
+                      _SettingsTile(
+                        icon: Icons.report_problem_outlined,
+                        iconTint: context.appColors.brandRed,
+                        title: AppConstants.reportIncorrectProverbLabel,
+                        subtitle: AppConstants.reportIncorrectProverbSubtitle,
+                        onTap:
+                            () =>
+                                SettingsActions.reportIncorrectProverb(context),
+                        animationIndex: 5,
+                      ),
+                      _SettingsTile(
+                        icon: Icons.privacy_tip_outlined,
+                        iconTint: context.appColors.brandRed,
+                        title: AppConstants.privacyPolicyLabel,
+                        subtitle: AppConstants.privacyPolicySubtitle,
+                        onTap: () => SettingsActions.openPrivacyPolicy(context),
+                        animationIndex: 6,
                       ),
                     ],
                   ),
                 ),
                 SizedBox(height: sectionGap),
                 StaggeredEntrance(
-                  index: 5,
-                  child: _SettingsFooter(),
+                  index: 7,
+                  child: _SettingsFooter(packageInfo: _packageInfo),
                 ),
               ],
             ),
@@ -87,10 +113,7 @@ class SettingsScreen extends StatelessWidget {
 }
 
 class _AppearanceHeroCard extends StatelessWidget {
-  const _AppearanceHeroCard({
-    required this.isDark,
-    required this.onChanged,
-  });
+  const _AppearanceHeroCard({required this.isDark, required this.onChanged});
 
   final bool isDark;
   final ValueChanged<bool> onChanged;
@@ -116,9 +139,7 @@ class _AppearanceHeroCard extends StatelessWidget {
               colors.brandGold.withValues(alpha: isDark ? 0.2 : 0.1),
             ],
           ),
-          border: Border.all(
-            color: scheme.outline.withValues(alpha: 0.15),
-          ),
+          border: Border.all(color: scheme.outline.withValues(alpha: 0.15)),
         ),
         child: Padding(
           padding: const EdgeInsets.all(AppSpacing.md),
@@ -190,10 +211,7 @@ class _AppearanceHeroCard extends StatelessWidget {
 }
 
 class _SettingsGroup extends StatelessWidget {
-  const _SettingsGroup({
-    required this.title,
-    required this.children,
-  });
+  const _SettingsGroup({required this.title, required this.children});
 
   final String title;
   final List<Widget> children;
@@ -340,6 +358,10 @@ class _IconBadge extends StatelessWidget {
 }
 
 class _SettingsFooter extends StatelessWidget {
+  const _SettingsFooter({required this.packageInfo});
+
+  final Future<PackageInfo> packageInfo;
+
   @override
   Widget build(BuildContext context) {
     final scheme = Theme.of(context).colorScheme;
@@ -351,13 +373,33 @@ class _SettingsFooter extends StatelessWidget {
         color: scheme.surfaceContainerHighest.withValues(alpha: 0.5),
         borderRadius: BorderRadius.circular(12),
       ),
-      child: Text(
-        AppConstants.settingsFooterHint,
-        style: Theme.of(context).textTheme.bodySmall?.copyWith(
-          color: scheme.onSurfaceVariant,
-          height: 1.45,
-        ),
-        textAlign: TextAlign.center,
+      child: Column(
+        children: [
+          Text(
+            AppConstants.settingsFooterHint,
+            style: Theme.of(context).textTheme.bodySmall?.copyWith(
+              color: scheme.onSurfaceVariant,
+              height: 1.45,
+            ),
+            textAlign: TextAlign.center,
+          ),
+          const SizedBox(height: AppSpacing.xs),
+          FutureBuilder<PackageInfo>(
+            future: packageInfo,
+            builder: (context, snapshot) {
+              final version = snapshot.data;
+              if (version == null) return const SizedBox.shrink();
+
+              return Text(
+                '${AppConstants.appVersionLabel} ${version.version}',
+                style: Theme.of(context).textTheme.labelSmall?.copyWith(
+                  color: scheme.onSurfaceVariant,
+                ),
+                textAlign: TextAlign.center,
+              );
+            },
+          ),
+        ],
       ),
     );
   }

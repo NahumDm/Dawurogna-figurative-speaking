@@ -19,6 +19,12 @@ abstract final class AppConstants {
       'Tell others about Dawuro Proverbs';
   static const String settingsContactSubtitle =
       'Email or message the developer';
+  static const String privacyPolicyLabel = 'Privacy policy';
+  static const String privacyPolicySubtitle = 'Learn how your data is handled';
+  static const String reportIncorrectProverbLabel = 'Report incorrect proverb';
+  static const String reportIncorrectProverbSubtitle =
+      'Help improve translations and explanations';
+  static const String appVersionLabel = 'Version';
   static const String checkForUpdateLabel = 'Check for update';
   static const String shareAppLabel = 'Share app';
   static const String contactDeveloperLabel = 'Contact developer';
@@ -53,8 +59,7 @@ abstract final class AppConstants {
   static const String proverbOfDayReadMore = 'Read full meaning';
   static const String proverbOfDayDismissLabel = 'Close';
 
-  static const String shareProverbFooter =
-      'Shared from Dawurogna Proverbs App';
+  static const String shareProverbFooter = 'Shared from Dawurogna Proverbs App';
   static const String shareProverbHeader = '📖 Dawurogna Proverb';
   static const String sharePhoneticHeader = '🔤 Phonetic';
   static const String shareAmharicHeader = '🇪🇹 Amharic Meaning';
@@ -99,9 +104,12 @@ abstract final class AppConstants {
 
   static const String playStoreUrl =
       'https://play.google.com/store/apps/details?id=com.narke.dawuro_proverb';
+  static const String privacyPolicyUrl =
+      'https://nahumdm.github.io/Dawurogna-figurative-speaking/PRIVACY_POLICY.html';
 
   static const String developerEmail =
       'mailto:nahomdesta.dev@gmail.com?subject=Feedback for Dawurogna App';
+  static const String reportIncorrectProverbEmail = 'nahomdesta.dev@gmail.com';
   static const String developerTelegram = 'https://t.me/NahumD';
 
   static const String contactSheetTitle = "We'd love to hear from you";

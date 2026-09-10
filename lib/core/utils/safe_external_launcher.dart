@@ -8,6 +8,8 @@ abstract final class SafeExternalLauncher {
 
   static final Set<String> _allowedHttpsHosts = {
     'play.google.com',
+    'github.com',
+    'nahumdm.github.io',
     't.me',
     'telegram.me',
     'telegram.org',
